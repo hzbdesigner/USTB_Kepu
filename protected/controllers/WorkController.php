@@ -1,7 +1,8 @@
 <?php
 
 class WorkController extends Controller
-{
+{	
+	public $layout='main';
 	public function actionBrief()
 	{
 		$this->render('brief');

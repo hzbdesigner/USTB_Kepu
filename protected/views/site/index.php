@@ -3,6 +3,46 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
+<div class="slider-wrapper">
+
+	<div id="da-slider" class="da-slider">
+		<div class="da-slide">
+			<h2>“科技创造七彩生活”系列画册</h2>
+			<p>关于什么是“科技创造七彩生活”系列画册，画册的一些简简单单的介绍</p>
+			<a href="#" class="da-link">Read more</a>
+			<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/twitter.png" alt="image01" /></div>
+		</div>
+		<div class="da-slide">
+			<h2>校园科普——学生科普作品</h2>
+			<p>同样是几句简单的描述，学生科普作品特点，数量多，质量高，学生好~怎么怎么</p>
+			<a href="#" class="da-link">Read more</a>
+			<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/responsive.png" alt="image02" /></div>
+		</div>
+		<div class="da-slide">
+			<h2>校园科普——学生科普活动</h2>
+			<p>社会实践（介绍+链接+作品展示）：科普下乡
+    志愿服务（介绍+链接+作品展示）：科普下乡
+    社团活动：天文学会某讲座
+    历届摇篮杯作品展示（作品简介）</p>
+			<a href="#" class="da-link">Read more</a>
+			<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/html5.png" alt="image03" /></div>
+		</div>
+		<div class="da-slide">
+			<h2>最新的一个科技新闻和领导会议</h2>
+			<p>社会实践（介绍+链接+作品展示）：科普下乡
+    志愿服务（介绍+链接+作品展示）：科普下乡
+    社团活动：天文学会某讲座
+    历届摇篮杯作品展示（作品简介）</p>
+			<a href="#" class="da-link">Read more</a>
+			<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/css3.png" alt="image04" /></div>
+		</div>
+		<nav class="da-arrows">
+			<span class="da-arrows-prev"></span>
+			<span class="da-arrows-next"></span>
+		</nav>
+	</div>
+	
+</div>
 <!--start: Wrapper-->
 	<div id="wrapper">
 		

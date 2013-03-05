@@ -62,16 +62,16 @@
 					<a class="brand" href="<?php echo $this->createUrl('/site/index') ; ?>"><i class="ico-charts circle"></i>北京科技大学<span>科普网</span></a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
-							<li class="active dropdown">
+							<li class=" dropdown <?php if ($this->id=='site') {echo 'active';} ?>">
 	                			<a href="<?php echo $this->createUrl('/site/index') ; ?>" class="dropdown-toggle" data-toggle="">首页</a>
 	              			</li>
-							<li class="dropdown">
+							<li class="dropdown <?php if ($this->id=='school') {echo 'active';} ?>">
 	              				<a href="<?php echo $this->createUrl('/school/index') ; ?>" class="dropdown-toggle" data-toggle="">北京科技大学</a>
 	              			</li>
-							<li class="dropdown">
+							<li class="dropdown <?php if ($this->id=='strength') {echo 'active';} ?>">
 	                			<a href="<?php echo $this->createUrl('/strength/index') ; ?>" class="dropdown-toggle" data-toggle="">优势学科</a>
 	              			</li>
-							<li class="dropdown">
+							<li class="dropdown <?php if ($this->id=='life') {echo 'active';} ?>">
 	                			<a href="<?php echo $this->createUrl('/life') ; ?>" class="dropdown-toggle" data-toggle="">七彩科技<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/life/yejin') ; ?>">冶金铸就文明系列（红：热情）</a></li>
@@ -83,7 +83,7 @@
 									<li><a href="<?php echo $this->createUrl('/life/ziran') ; ?>">大自然的馈赠（青：坚强）</a></li>
 	                			</ul>
 	              			</li>									
-							<li class="dropdown"><a href="<?php echo $this->createUrl('/work') ; ?>" class="dropdown-toggle" data-toggle="">科普作品<b class="caret"></b></a>
+							<li class="dropdown <?php if ($this->id=='work') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/work') ; ?>" class="dropdown-toggle" data-toggle="">科普作品<b class="caret"></b></a>
 								<ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/work/brief') ; ?>">学生科技活动简介</a></li>
 									<li><a href="<?php echo $this->createUrl('/work/zhanpin') ; ?>">科普展品类</a></li>
@@ -93,7 +93,8 @@
 									<li><a href="<?php echo $this->createUrl('/work/baogao') ; ?>">科普报告类</a></li>
 	                			</ul>
 							</li>
-							<li class="dropdown"><a href="<?php echo $this->createUrl('/activity') ; ?>" class="dropdown-toggle" data-toggle="">科普活动<b class="caret"></b></a>
+							<li class="dropdown <?php if ($this->id=='activity') {echo 'active';} ?>">
+								<a href="<?php echo $this->createUrl('/activity') ; ?>" class="dropdown-toggle" data-toggle="">科普活动<b class="caret"></b></a>
 								<ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/activity/shijian') ; ?>"> 社会实践（科普下乡）</a></li>
 									<li><a href="<?php echo $this->createUrl('/activity/zhiyuan') ; ?>">志愿服务</a></li>
@@ -116,46 +117,7 @@
 	<!--end: Header-->
 	
 	<!-- start: Slider -->
-	<div class="slider-wrapper">
-
-		<div id="da-slider" class="da-slider">
-			<div class="da-slide">
-				<h2>“科技创造七彩生活”系列画册</h2>
-				<p>关于什么是“科技创造七彩生活”系列画册，画册的一些简简单单的介绍</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/twitter.png" alt="image01" /></div>
-			</div>
-			<div class="da-slide">
-				<h2>校园科普——学生科普作品</h2>
-				<p>同样是几句简单的描述，学生科普作品特点，数量多，质量高，学生好~怎么怎么</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/responsive.png" alt="image02" /></div>
-			</div>
-			<div class="da-slide">
-				<h2>校园科普——学生科普活动</h2>
-				<p>社会实践（介绍+链接+作品展示）：科普下乡
-        志愿服务（介绍+链接+作品展示）：科普下乡
-        社团活动：天文学会某讲座
-        历届摇篮杯作品展示（作品简介）</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/html5.png" alt="image03" /></div>
-			</div>
-			<div class="da-slide">
-				<h2>最新的一个科技新闻和领导会议</h2>
-				<p>社会实践（介绍+链接+作品展示）：科普下乡
-        志愿服务（介绍+链接+作品展示）：科普下乡
-        社团活动：天文学会某讲座
-        历届摇篮杯作品展示（作品简介）</p>
-				<a href="#" class="da-link">Read more</a>
-				<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/css3.png" alt="image04" /></div>
-			</div>
-			<nav class="da-arrows">
-				<span class="da-arrows-prev"></span>
-				<span class="da-arrows-next"></span>
-			</nav>
-		</div>
-		
-	</div>
+	
 	<!-- end: Slider -->
 	<?php echo $content; ?>		
 

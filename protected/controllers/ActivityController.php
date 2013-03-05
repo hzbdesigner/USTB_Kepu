@@ -1,7 +1,8 @@
 <?php
 
 class ActivityController extends Controller
-{
+{	
+	public $layout='main';
 	public function actionShijian()
 	{
 		$this->render('shijian');

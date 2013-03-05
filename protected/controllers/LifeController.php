@@ -1,7 +1,8 @@
 <?php
 
 class LifeController extends Controller
-{
+{	
+	public $layout='main';
 	public function actionYejin()
 	{
 		$this->render('yejin');
