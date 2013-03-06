@@ -1,13 +1,5 @@
 
 
-<?php
-$this->breadcrumbs=array(
-	'School',
-);?>
-<h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
-
-<p>You may change the content of this page by modifying the file <tt><?php echo __FILE__; ?></tt>.</p>
-
 <!-- start: Page Title -->
 	<div id="page-title">
 
@@ -31,15 +23,112 @@ $this->breadcrumbs=array(
 				
 		<!--start: Container -->
     	<div class="container">
+
+    		
 	
 			<!--start: Row -->
 	    	<div class="row">
+
+	    		<div class="span4">
+					
+					<!-- start: Sidebar -->
+					<div id="sidebar">
+
+						<!-- start: Sidebar Menu -->
+
+							<div class="title"><h3>学校简介</h3></div>
+							<ul class="links-list-alt">
+								<li><a href="full_width.html">学生科技活动简介</a></li>
+								<li><a href="sidebar.html">科普展品类</a></li>
+								<li><a href="post.html">科普文艺类</a></li>
+								<li><a href="about.html"> 科普网络及软件类</a></li>
+								<li><a href="pricing_tables.html">科普报告类</a></li>
+							</ul>
+
+							<div class="title"><h3>科普开放日预约</h3></div>
+									<!-- start: Contact Form -->
+							<div id="contact-form">
+
+								<form method="post" action="">
+
+									<fieldset>
+										<div class="clearfix">
+											<label for="name"><span>用户名:</span></label>
+											<div class="input">
+												<input tabindex="1" size="20" id="name" name="name" type="text" value="">
+											</div>
+										</div>
+
+										<div class="clearfix">
+											<label for="email"><span>密码:</span></label>
+											<div class="input">
+												<input tabindex="2" size="20" id="email" name="email" type="text" value="" >
+											</div>
+										</div>
+
+										<div class="actions">
+											<button tabindex="3" type="submit" class="btn btn-succes ">登&nbsp;录</button>
+										</div>
+									</fieldset>
+
+								</form>
+
+							</div>
+							<!-- end: Contact Form -->
+
+							<div class="title"><h3>联系我们</h3></div>
+							<p style="padding-left:12px;margin-top:15px;">主管部门：北京科技大学校团委</p>
+							<p style="padding-left:12px;">地址：学院路30号</p>
+							
+							<p style="padding-left:12px;">电话：15210567035</p>
+							<p style="padding-left:12px;">邮箱：hzbdesigner@gmail.com</p>
+						
+
+					</div>
+					<!-- end: Sidebar -->
+					
+				</div>
 		
 				<div class="span8">
 					
 					<!-- start: About Us -->
 					<div id="about">
 						<div class="title"><h3>About Us</h3></div>
+						<!-- start: Flexslider -->
+						<div class="slider school">
+						
+							<div id="flex1" class="flexslider">
+								<ul class="slides">
+
+									<li>
+										<img src="<?php echo Yii::app()->baseUrl; ?>/img/slider/slider1.jpg" alt="" />
+										<div class="slide-caption n hidden-phone">
+											<h3>This is a caption</h3>
+											<p>
+												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+											</p>
+										</div>
+									</li>
+
+									<li>
+										<img src="<?php echo Yii::app()->baseUrl; ?>/img/slider/slider2.jpg" alt="" />
+										<div class="slide-caption hidden-phone">
+											<h3>This is a caption</h3>
+											<p>
+												Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+											</p>
+										</div>
+									</li>
+
+									<li>
+										<img src="<?php echo Yii::app()->baseUrl; ?>/img/slider/slider3.jpg" alt="" />
+									</li>
+
+								</ul>
+							</div>
+						
+						</div>
+						<!-- end: Flexslider -->
 						<p>
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 						</p>
@@ -72,188 +161,17 @@ $this->breadcrumbs=array(
 						</p>
 					</div>	
 					<!-- end: History -->
-
-					<!-- start: Team -->	
-					<div id="team">
-						
-						<div class="title"><h3>Team</h3></div>
-						
-						<!-- start: Row -->
-						<div class="row">
-						
-							<!-- start: About Member -->
-							<div class="span4">
-								<img src="img/team_member.jpg" alt="team member">
-								<div class="team-name">Lucas Luck <span> / Co-Founder, CEO</span></div>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-								</p>
-								<div class="social_profiles">
-									<ul class="social-bookmarks">
-										<li class="facebook"><a href="">facebook</a></li>
-										<li class="flickr"><a href="">flickr</a></li>
-										<li class="googleplus"><a href="#">googleplus</a></li>
-										<li class="linkedin"><a href="#">linkedin</a></li>
-										<li class="twitter"><a href="#">twitter</a></li>
-										<li class="pinterest"><a href="#">pinterest</a></li>
-									</ul>
-								</div>	
-							</div>
-							<!-- end: About Member -->
-
-							<!-- start: About Member -->
-							<div class="span4">
-								<img src="img/team_member.jpg" alt="team member">
-								<div class="team-name">Lucas Luck <span> / Co-Founder, General Manager</span></div>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-								</p>
-								<div class="social_profiles">
-									<ul class="social-bookmarks">
-										<li class="facebook"><a href="">facebook</a></li>
-										<li class="flickr"><a href="">flickr</a></li>
-										<li class="googleplus"><a href="#">googleplus</a></li>
-										<li class="linkedin"><a href="#">linkedin</a></li>
-										<li class="twitter"><a href="#">twitter</a></li>
-										<li class="pinterest"><a href="#">pinterest</a></li>
-									</ul>
-								</div>	
-							</div>
-							<!-- end: About Member -->	
-						
-						</div>
-						<!-- end: Row -->
-
-					</div>
-					<!-- end: Team -->
 					
 					
 				</div>	
 				
-				<div class="span4">
-					
-					<!-- start: Sidebar -->
-					<div id="sidebar">
-
-						<!-- start: Skills -->
-				       	<div class="title"><h3>Our Skills</h3></div>
-				       	<ul class="progress-bar">
-				        	<li>
-				            	<h5>Web Design ( 40% )</h5>
-				            	<div class="meter"><span style="width: 40%"></span></div><!-- Edite width here -->
-				          	</li>
-				          	<li>
-				            	<h5>Wordpress ( 80% )</h5>
-				            	<div class="meter"><span style="width: 80%"></span></div><!-- Edite width here -->
-				          	</li>
-				          	<li>
-				            	<h5>Branding ( 100% )</h5>
-				            	<div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
-				          	</li>
-				          	<li>
-				            	<h5>SEO Optmization ( 60% )</h5>
-				            	<div class="meter"><span style="width: 60%"></span></div><!-- Edite width here -->
-				          	</li>
-				      	</ul>
-				      	<!-- end: Skills -->
-
-						<!-- start: Tabs -->
-						<div class="title"><h3>Tabs</h3></div>
-
-						<ul class="tabs-nav">
-							<li class="active"><a href="#tab1"><i class="mini-ico-glass"></i> Tab 1</a></li>
-							<li><a href="#tab2"><i class="mini-ico-list"></i> Tab 2</a></li>
-							<li><a href="#tab3"><i class="mini-ico-pencil"></i> Tab 3</a></li>
-						</ul>
-
-						<div class="tabs-container">
-							<div class="tab-content" id="tab1">1. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-							<div class="tab-content" id="tab2">2. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-							<div class="tab-content" id="tab3">3. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-						</div>
-						<!-- end: Tabs -->
-
-						<!-- start: Testimonials-->
-
-						<div class="testimonial-container">
-
-							<div class="title"><h3>Testimonials</h3></div>
-
-								<div class="testimonials-carousel" data-autorotate="3000">
-
-									<ul class="carousel">
-
-										<li class="testimonial">
-											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-											<div class="testimonials-bg"></div>
-											<div class="testimonials-author">Lucas Luck, <span>CEO</span></div>
-										</li>
-
-										<li class="testimonial">
-											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-											<div class="testimonials-bg"></div>
-											<div class="testimonials-author">Lucas Luck, <span>CTO</span></div>
-										</li>
-
-										<li class="testimonial">
-											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-											<div class="testimonials-bg"></div>
-											<div class="testimonials-author">Lucas Luck, <span>COO</span></div>
-										</li>
-
-										<li class="testimonial">
-											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-											<div class="testimonials-bg"></div>
-											<div class="testimonials-author">Lucas Luck, <span>CMO</span></div>
-										</li>
-
-									</ul>
-
-								</div>
-
-							</div>
-
-						<!-- end: Testimonials-->
-
-					</div>
-					<!-- end: Sidebar -->
-					
-				</div>
+				
 				
 			</div>
 			<!--end: Row-->
 	
 		</div>
 		<!--end: Container-->
-				
-		<!--start: Container -->
-    	<div class="container">	
-      		
-			<hr>
-		
-			<!-- start Clients List -->	
-			<div class="clients-carousel">
-		
-				<ul class="slides clients">
-					<li><img src="img/logos/1.png" alt=""/></li>
-					<li><img src="img/logos/2.png" alt=""/></li>	
-					<li><img src="img/logos/3.png" alt=""/></li>
-					<li><img src="img/logos/4.png" alt=""/></li>
-					<li><img src="img/logos/5.png" alt=""/></li>
-					<li><img src="img/logos/6.png" alt=""/></li>
-					<li><img src="img/logos/7.png" alt=""/></li>
-					<li><img src="img/logos/8.png" alt=""/></li>
-					<li><img src="img/logos/9.png" alt=""/></li>
-					<li><img src="img/logos/10.png" alt=""/></li>		
-				</ul>
-		
-			</div>
-			<!-- end Clients List -->
-		
-			<hr>
-		
-		</div>
-		<!--end: Container-->	
 
 	</div>
 	<!-- end: Wrapper  -->

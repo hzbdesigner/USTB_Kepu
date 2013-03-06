@@ -207,60 +207,50 @@ $this->pageTitle=Yii::app()->name;
 					<div class="testimonial-container">
 
 						<div class="title"><h3>科普开放日</h3><a class="btn-more news" href="#">More&raquo;</a></div>
-							<h3>什么是科普开放日？</h3>
-							<p>什么是校园科普开发日呢？？听我给你吹你吹~科普开放日的内容非常的丰富，学生可以参观，可以浏览，还有各种科普文化产品，很好玩也可以学到很多科普知识，大概就是这样子吧。什么是校园科普开发日呢？？听我给你吹你吹~科普开放日的内容非常的丰富，学生可以参观，可以浏览，还有各种科普文化产品，很好玩也可以学到很多科普知识，大概就是这样子吧。什么是校园科普开发日呢？？听我给你吹你吹~科普开放日的内容非常的丰富，学生可以参观，可以浏览，还有各种科普文化产品，很好玩也可以学到很多科普知识，大概就是这样子吧。什么是校园科普开发日呢？？听我给你吹你吹~</p>
-							<!-- <form method="post" action="">
-								<fieldset>
-									<div class="clearfix">
-										<label for="name"><span>用户名:</span></label>
-										<div class="input">
-											<input tabindex="1" size="18" id="name" name="name" type="text" value="">
-										</div>
+							<ul class="tabs-nav">
+								<li class="active"><a href="#tab1"><i class="mini-ico-glass"></i>简介</a></li>
+								<li><a href="#tab2"><i class="mini-ico-list"></i> 关于开放</a></li>
+								<li><a href="#tab3"><i class="mini-ico-pencil"></i> 预约登录</a></li>
+							</ul>
+
+							<div class="tabs-container">
+								<div class="tab-content" id="tab1">什么是校园科普开发日呢？？听我给你吹你吹~科普开放日的内容非常的丰富，学生可以参观，可以浏览，还有各种科普文化产品，很好玩也可以学到很多科普知识，大概就是这样子吧。什么是校园科普开发日呢？？听我给你吹你吹~科普开放日的内容非常的丰富，学生可以参观，可以浏览，还有各种科普文化产品，很好玩也可以学到很多科普知识，大概就是这样子吧。什么是校园科普开发日呢？？听我给你吹你吹~科普开放日</div>
+								<div class="tab-content" id="tab2">开放时间和开放地点什么的，都放在这里吧，甚至包括乘车路线如果可以的话开放时间和开放地点什么的，都放在这里吧，甚至包括乘车路线如果可以的话开放时间和开放地点什么的，都放在这里吧，甚至包括乘车路线如果可以的话</div>
+								<div class="tab-content" id="tab3">
+											<!-- start: Contact Form -->
+									<div id="contact-form">
+
+										<form method="post" action="">
+
+											<fieldset>
+												<div class="clearfix">
+													<label for="name"><span>用户名:</span></label>
+													<div class="input">
+														<input tabindex="1" size="20" id="name" name="name" type="text" value="">
+													</div>
+												</div>
+
+												<div class="clearfix">
+													<label for="email"><span>密码:</span></label>
+													<div class="input">
+														<input tabindex="2" size="20" id="email" name="email" type="text" value="" >
+													</div>
+												</div>
+
+												<div class="actions">
+													<button tabindex="3" type="submit" class="btn btn-succes ">登&nbsp;录</button>
+												</div>
+											</fieldset>
+
+										</form>
+
 									</div>
+									<!-- end: Contact Form -->
 
-									<div class="clearfix">
-										<label for="email"><span>密码:</span></label>
-										<div class="input">
-											<input tabindex="2" size="25" id="email" name="email" type="text" value="" class="input-xlarge">
-										</div>
-									</div>
-									<div class="actions">
-										<button tabindex="3" type="submit" class="btn btn-succes btn-large">Send message</button>
-									</div>
-								</fieldset>
-
-							</form> -->
-							<!-- <div class="testimonials-carousel" data-autorotate="3000">
-
-								<ul class="carousel">
-
-									<li class="testimonial">
-										<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
-										<div class="testimonials-bg"></div>
-										<div class="testimonials-author">Lucas Luck, <span>CEO</span></div>
-									</li>
-
-									<li class="testimonial">
-										<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
-										<div class="testimonials-bg"></div>
-										<div class="testimonials-author">Lucas Luck, <span>CTO</span></div>
-									</li>
-
-									<li class="testimonial">
-										<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
-										<div class="testimonials-bg"></div>
-										<div class="testimonials-author">Lucas Luck, <span>COO</span></div>
-									</li>
-
-									<li class="testimonial">
-										<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
-										<div class="testimonials-bg"></div>
-										<div class="testimonials-author">Lucas Luck, <span>CMO</span></div>
-									</li>
-
-								</ul>
-
-							</div> -->
+								</div>
+							</div>
+							<p></p>
+							
 
 						</div>
 
@@ -270,39 +260,7 @@ $this->pageTitle=Yii::app()->name;
 
       		</div>
 			<!-- end: Row -->
-			
-			<hr>
 		
-			<!-- start Clients List -->	
-			<div class="clients-carousel">
-		
-				<ul class="slides clients">
-					<li><img src="img/logos/1.png" alt=""/></li>
-					<li><img src="img/logos/2.png" alt=""/></li>	
-					<li><img src="img/logos/3.png" alt=""/></li>
-					<li><img src="img/logos/4.png" alt=""/></li>
-					<li><img src="img/logos/5.png" alt=""/></li>
-					<li><img src="img/logos/6.png" alt=""/></li>
-					<li><img src="img/logos/7.png" alt=""/></li>
-					<li><img src="img/logos/8.png" alt=""/></li>
-					<li><img src="img/logos/9.png" alt=""/></li>
-					<li><img src="img/logos/10.png" alt=""/></li>
-					<li><img src="img/logos/1.png" alt=""/></li>
-					<li><img src="img/logos/2.png" alt=""/></li>	
-					<li><img src="img/logos/3.png" alt=""/></li>
-					<li><img src="img/logos/4.png" alt=""/></li>
-					<li><img src="img/logos/5.png" alt=""/></li>
-					<li><img src="img/logos/6.png" alt=""/></li>
-					<li><img src="img/logos/7.png" alt=""/></li>
-					<li><img src="img/logos/8.png" alt=""/></li>
-					<li><img src="img/logos/9.png" alt=""/></li>
-					<li><img src="img/logos/10.png" alt=""/></li>	
-				</ul>
-		
-			</div>
-			<!-- end Clients List -->
-		
-			<hr>
 			
 		</div>
 		<!--end: Container-->

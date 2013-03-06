@@ -74,7 +74,8 @@ hr {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
-
+.container.cp hr{margin:20px 80px 10px;border:none;border-bottom: 1px solid #eee;}
+.container.cp p{text-align: center;}
 			
 .title {
 	border-bottom: 4px double #eee;
@@ -403,7 +404,8 @@ header.container{background:transparent;}
 
 /* Flexslider
 =================================================================== */
-
+.slider.school{height: 240px;}
+.slider.school .flexslider img{height: 240px;}
 /* Browser Resets
 =================================================================== */
 .flex-container a:active,
@@ -895,7 +897,7 @@ input[type="button"] {
 .testimonial-container {
 	position: relative;
 }
-
+.testimonial-container .tab-content{padding:16px;padding-top:10px;}
 .testimonials {
 	background: #eee;
 	border: 1px solid #eee;
@@ -1810,6 +1812,7 @@ li.current {
 #footer-menu {
 	height: 50px;
 	background: #fcfcfc url(../img/bg-k20.png) repeat;
+	background-color: #fefefe;
 	border-top: 4px solid #f6f6f6;
 	border-bottom: 4px solid #f6f6f6;
 	margin-top: 20px;
@@ -1909,7 +1912,7 @@ li.current {
 }
 
 #footer-menu-links ul li a:hover {
-	color: #fff;
+	color: #29a9df;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -1941,9 +1944,10 @@ li.current {
 
 #footer {
 	background: url(../img/bg-k10.png) repeat;
-	border-bottom: 4px solid #f6f6f6;
-	color: #666 !important;
-	padding: 40px 0px;
+	background-color: #555;
+	
+	color: #fff!important;
+	padding: 30px 0px 0px;
 	z-index: 1;
 	position: relative;
 	opacity: 1;
@@ -1952,7 +1956,7 @@ li.current {
 #footer, 
 #footer p, 
 #footer a{ 
-	color: #666 !important;
+	color: #fff !important;
 }
 
 #footer a:hover {
@@ -1964,9 +1968,12 @@ li.current {
 #footer h3 {
 	padding: 2px 0px !important;
 	margin-bottom: 10px;
-	color: #666;
-	border-bottom: 5px double #f6f6f6;
+	color: #fff;
+	border-bottom: 3px double #f6f6f6;
 }
+#footer .span5.widget{margin-top: 0px;}
+#footer .span5.widget .tag{background-color:#999;color: #fff;border-color: #ddd;}
+
 
 /* Newsletter Form
 ====================================================================== */
@@ -2446,4 +2453,9 @@ form#newsletter input[type=submit] {
 	}
 	
 }
+
+ul.links-list-alt {margin-top: 20px;margin-bottom: 12px;}
+ul.links-list-alt li{line-height:24px;padding-left:12px;}
+ul.links-list-alt li a{font-size: 14px;}
+#contact-form {padding-left:12px;}
 	

@@ -134,7 +134,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="#">Sma<span>rt</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="#">科普网</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -146,15 +146,19 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="index.html">Start</a></li>
+							<li><a href="index.html">首页</a></li>
 
-							<li><a href="about.html">About</a></li>
+							<li><a href="about.html">北京科技大学</a></li>
 
-							<li><a href="services.html">Services</a></li>
+							<li><a href="services.html">优势学科</a></li>
 
-							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="pricing.html">科技创造七彩生活</a></li>
 							
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.html">科普作品</a></li>
+
+							<li><a href="contact.html">科普活动</a></li>
+
+							<li><a href="contact.html">联系</a></li>
 
 						</ul>
 
@@ -194,99 +198,38 @@
 				<!-- start: About -->
 				<div class="span3">
 					
-					<h3>About Us</h3>
+					<h3><i class="icon-home icon-white"></i>关于科普网</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+						北京科技大学科普网是隶属于北京科技大学校团委某某部门的网站，主要内容是呈现校园科技，展现校园科技，互动校园科技文化，增加校园科技进步，作用重大，意义非凡。给同学们的学习生活带来了极大的乐趣，推动了学生们的知识学习，实践能力的提高。总之大家多来看看哈~~
 					</p>
 						
 				</div>
 				<!-- end: About -->
 
 				<!-- start: Photo Stream -->
-				<div class="span3">
+				<div class="span5 widget">
 					
-					<h3>Photo Stream</h3>
-					<div class="flickr-widget">
-							<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&display=latest&size=s&layout=x&source=user&user=29609591@N08"></script>
-						<div class="clear"></div>
+					<h3 class="title"><i class="icon-link icon-white"></i>友情链接</h3>
+					<div class="tags">
+						<a class="tag" href="#">北京科技大学首页</a>
+						<a class="tag" href="#">北京科技大学科技处</a>
+						<a class="tag" href="#">北京科技大学招生网</a>
+						<a class="tag" href="#">北京科技大学学生会</a>
+						<a class="tag" href="#">北京科技大学校团委</a>
 					</div>
+
 					
 				</div>
 				<!-- end: Photo Stream -->
 
-				<div class="span6">
+				<div class="span4">
 				
 					<!-- start: Follow Us -->
-					<h3>Follow Us!</h3>
-					<ul class="social-grid">
-						<li>
-							<div class="social-item">				
-								<div class="social-info-wrap">
-									<div class="social-info">
-										<div class="social-info-front social-twitter">
-											<a href="http://twitter.com"></a>
-										</div>
-										<div class="social-info-back social-twitter-hover">
-											<a href="http://twitter.com"></a>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="social-item">				
-								<div class="social-info-wrap">
-									<div class="social-info">
-										<div class="social-info-front social-facebook">
-											<a href="http://facebook.com"></a>
-										</div>
-										<div class="social-info-back social-facebook-hover">
-											<a href="http://facebook.com"></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="social-item">				
-								<div class="social-info-wrap">
-									<div class="social-info">
-										<div class="social-info-front social-dribbble">
-											<a href="http://dribbble.com"></a>
-										</div>
-										<div class="social-info-back social-dribbble-hover">
-											<a href="http://dribbble.com"></a>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="social-item">				
-								<div class="social-info-wrap">
-									<div class="social-info">
-										<div class="social-info-front social-flickr">
-											<a href="http://flickr.com"></a>
-										</div>
-										<div class="social-info-back social-flickr-hover">
-											<a href="http://flickr.com"></a>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
+					<h3><i class="icon-adress-book icon-white"></i>联系我们</h3>
+					
 					<!-- end: Follow Us -->
 				
-					<!-- start: Newsletter -->
-					<form id="newsletter">
-						<h3>Newsletter</h3>
-						<p>Please leave us your email</p>
-						<label for="newsletter_input">@:</label>
-						<input type="text" id="newsletter_input"/>
-						<input type="submit" id="newsletter_submit" value="submit">
-					</form>
-					<!-- end: Newsletter -->
+					
 				
 				</div>
 				
@@ -296,26 +239,17 @@
 		</div>
 		<!-- end: Container  -->
 
-	</div>
-	<!-- end: Footer -->
-
-	<!-- start: Copyright -->
-	<div id="copyright">
-	
-		<!-- start: Container -->
-		<div class="container">
+		<div class="container cp">
+			<hr>
+			<p>
+				Copyrights © 2012 & All Rights Reserved by USTB.
+			</p>
 		
-			<div class="span12">
-				<p>
-					&copy; 2012, <a href="http://clabs.co">createiveLabs</a>. Designed by <a href="http://clabs.co">createiveLabs</a> in Poland <img src="img/poland2.png" alt="Poland" style="margin-top:-4px">
-				</p>
-			</div>
-	
 		</div>
-		<!-- end: Container  -->
-		
-	</div>	
-	<!-- end: Copyright -->
+
+	</div>
+
+	<!-- end: Footer -->
 
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
