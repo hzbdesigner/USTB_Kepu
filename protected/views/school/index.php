@@ -36,13 +36,12 @@
 
 						<!-- start: Sidebar Menu -->
 
-							<div class="title"><h3>学校简介</h3></div>
+							<div class="title"><h3>北京科技大学</h3></div>
 							<ul class="links-list-alt">
-								<li><a href="full_width.html">学生科技活动简介</a></li>
-								<li><a href="sidebar.html">科普展品类</a></li>
-								<li><a href="post.html">科普文艺类</a></li>
-								<li><a href="about.html"> 科普网络及软件类</a></li>
-								<li><a href="pricing_tables.html">科普报告类</a></li>
+								<li><a href="full_width.html">学校简介</a></li>
+								<li><a href="sidebar.html">学校历史</a></li>
+								<li><a href="post.html">校园文化</a></li>
+								<li><a href="about.html"> 其他</a></li>
 							</ul>
 
 							<div class="title"><h3>科普开放日预约</h3></div>

@@ -3,40 +3,56 @@
 class WorkController extends Controller
 {	
 	public $layout='main';
-	public function actionBrief()
+
+		public function actionIndex()
 	{
-		$this->render('brief');
+		$sub_content = $this->renderPartial('/work/brief' ,array(),true);
+	    $this->render('index',array('sub_content' =>$sub_content));
+	}
+	public function actionBrief()
+	{   
+		$sub_content = $this->renderPartial('/work/brief' ,array(),true);
+	    $this->render('index',array('sub_content' =>$sub_content));
+
 	}
 
 	public function actionZhanpin()
 	{
-		$this->render('zhanpin');
+		$sub_content = $this->renderPartial('/work/zhanpin' ,array(),true);
+	    $this->render('index',array('sub_content' =>$sub_content));
 	}
 
 	public function actionWenyi()
 	{
-		$this->render('wenyi');
+		$sub_content = $this->renderPartial('/work/wenyi',array(),true);
+	    $this->render('index',array('sub_content' =>$sub_content));
 	}
 
 	public function actionDongman()
 	{
-		$this->render('dongman');
+		$sub_content = $this->renderPartial('/work/dongman' ,array(),true);
+	    $this->render('index',array('sub_content' =>$sub_content));
 	}
 
 	public function actionWangluo()
 	{
-		$this->render('wangluo');
+		$sub_content = $this->renderPartial('/work/wangluo' ,array(),true);
+	    $this->render('index',array('sub_content' =>$sub_content));
 	}
 
 	public function actionBaogao()
 	{
-		$this->render('baogao');
+		$sub_content = $this->renderPartial('/work/baogao' ,array(),true);
+	    $this->render('index',array('sub_content' =>$sub_content));
 	}
 
-	public function actionIndex()
+	public function actionView()
 	{
-		$this->render('index');
+		$sub_content = $this->renderPartial('/work/view' ,array(),true);
+	    $this->render('subindex',array('sub_content' =>$sub_content));
 	}
+
+
 
 	// -----------------------------------------------------------
 	// Uncomment the following methods and override them if needed
