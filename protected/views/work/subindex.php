@@ -29,10 +29,10 @@
 			<!--start: Row -->
 	    	<div class="row">
 		
-				<div class="span8">
+				
 					
 					<?php echo $sub_content ;?>
-			   </div>
+			   
 				
 			</div>
 			<!--end: Row-->

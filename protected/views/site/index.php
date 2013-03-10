@@ -153,8 +153,8 @@ $this->pageTitle=Yii::app()->name;
 						<div class="span3">
 	
 							<div class="picture">
-								<a href="img/car.jpg" rel="image" title="mobile app">
-									<img src="img/car.jpg" >
+								<a href="" rel="image" title="mobile app">
+									<img src="<?php echo Yii::app()->baseUrl; ?>/img/car.jpg" >
 									<div class="image-overlay-zoom"></div>
 								</a>
 							</div>
@@ -168,8 +168,8 @@ $this->pageTitle=Yii::app()->name;
 						<div class="span3">
 
 							<div class="picture">
-								<a href="project.html">
-									<img src="img/web_app1.jpg">
+								<a href="#">
+									<img src="<?php echo Yii::app()->baseUrl; ?>/img/web_app1.jpg">
 									<div class="image-overlay-zoom"></div>
 								</a>
 							</div>
@@ -183,8 +183,8 @@ $this->pageTitle=Yii::app()->name;
 						<div class="span3">
 
 							<div class="picture">
-								<a href="img/mobile_app1.jpg" rel="image" title="mobile app">
-									<img src="img/mobile_app1.jpg">
+								<a href="#" rel="image" title="mobile app">
+									<img src="<?php echo Yii::app()->baseUrl; ?>/img/mobile_app1.jpg">
 									<div class="image-overlay-zoom"></div>
 								</a>
 							</div>
@@ -209,8 +209,8 @@ $this->pageTitle=Yii::app()->name;
 						<div class="title"><h3>科普开放日</h3><a class="btn-more news" href="#">More&raquo;</a></div>
 							<ul class="tabs-nav">
 								<li class="active"><a href="#tab1"><i class="mini-ico-glass"></i>简介</a></li>
-								<li><a href="#tab2"><i class="mini-ico-list"></i> 关于开放</a></li>
-								<li><a href="#tab3"><i class="mini-ico-pencil"></i> 预约登录</a></li>
+								<li><a href="#tab2"><i class="mini-ico-list"></i> 开放</a></li>
+								<li><a href="#tab3"><i class="mini-ico-pencil"></i> 预约</a></li>
 							</ul>
 
 							<div class="tabs-container">

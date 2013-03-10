@@ -72,7 +72,7 @@
 	                			<a href="<?php echo $this->createUrl('/strength/index') ; ?>" class="dropdown-toggle" data-toggle="">优势学科</a>
 	              			</li>
 							<li class="dropdown <?php if ($this->id=='life') {echo 'active';} ?>">
-	                			<a href="<?php echo $this->createUrl('/life') ; ?>" class="dropdown-toggle" data-toggle="">七彩科技<b class="caret"></b></a>
+	                			<a href="<?php echo $this->createUrl('/life') ; ?>" class="dropdown-toggle" data-toggle="">科技生活<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/life/yejin') ; ?>">冶金铸就文明系列（红：热情）</a></li>
 									<li><a href="<?php echo $this->createUrl('/life/cailiao') ; ?>">材料创造传奇系列（紫：神秘）</a></li>
@@ -103,7 +103,7 @@
 	                			</ul>
 							</li>
 							<!-- <li><a href="blog.html">科普新闻</a></li> -->
-	              			<li><a href="<?php echo $this->createUrl('/contact') ; ?>">联系我们</a></li>
+	              			<!-- <li><a href="<?php echo $this->createUrl('/contact') ; ?>">联系我们</a></li> -->
 	            		</ul>
 	          		</div>
 	        	</div>

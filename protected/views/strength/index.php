@@ -20,6 +20,31 @@
 				
 		<!--start: Container -->
     	<div class="container">
+
+    		<div class="eight columns testimonial-container">
+
+				<h3>六大优势学科</h3>
+
+				<div class="testimonials-carousel" data-autorotate="3000">
+					<ul class="carousel">
+
+						<li class="testimonial">
+							<div class="testimonials">冶金学科，专业见解，专业评价。冶金学科，专业见解，专业评价。冶金学科，专业见解，专业评价。冶金学科，专业见解，专业评价。冶金学科，专业见解，专业评价。</div>
+							<div class="testimonials-bg"></div>
+							<div class="testimonials-author">冶金学院院长, <span>XXX教授</span></div>
+						</li>
+
+						<li class="testimonial">
+							<div class="testimonials">材料学科，专业见解，专业评价。材料学科，专业见解，专业评价。材料学科，专业见解，专业评价。材料学科，专业见解，专业评价。材料学科，专业见解，专业评价。材料学科，专业见解，专业评价。</div>
+							<div class="testimonials-bg"></div>
+							<div class="testimonials-author">材料学院院长, <span>XXX教授</span></div>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
 	
       		<!-- start: Row -->
       		<div class="row">
