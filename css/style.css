@@ -83,7 +83,7 @@ hr {
 }
 
 .title h1, .title h2, .title h3, .title h4, .title h5, .title h6 {
-	border-bottom: 5px solid #29a9df !important;
+	border-bottom: 5px solid #a21317 !important;
 	margin-bottom: -4px !important;
 	display: inline-block !important;
 	
@@ -146,7 +146,7 @@ header.container{background:transparent;}
 }
 
 .brand span {
-	color: #29a9df;
+	color: #a21317;
 }
 
 #social-links {
@@ -190,8 +190,8 @@ header.container{background:transparent;}
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-	border-top:4px solid #29a9df !important;	
-  	background: #29a9df !important;		
+	border-top:4px solid #a21317 !important;	
+  	background: #a21317 !important;		
   	color: #fff;
 }
 
@@ -199,16 +199,16 @@ header.container{background:transparent;}
 .navbar .nav > .active > a:focus {
   	color: #fff!important;	
   	text-decoration: none;
-	border-top:4px solid #29a9df !important;	
-  	background-color: #29a9df !important;	
+	border-top:4px solid #a21317 !important;	
+  	background-color: #a21317 !important;	
   	-webkit-box-shadow: none;
        -moz-box-shadow: none;
           	box-shadow: none;
 }
 
 .navbar .nav > .active > a:hover {
-	border-top:4px solid #29a9df !important;	
-  	background: #29a9df !important;		
+	border-top:4px solid #a21317 !important;	
+  	background: #a21317 !important;		
   	color: #fff !important;
   	-webkit-box-shadow: none;
        -moz-box-shadow: none;
@@ -224,16 +224,16 @@ header.container{background:transparent;}
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   color: #ffffff;
-  background: #29a9df !important;	
+  background: #a21317 !important;	
 }
 
 .dropdown-menu .active > a {
 	color: #ffffff !important;
-  	background: #29a9df !important;
+  	background: #a21317 !important;
 }
 .dropdown-menu .active > a:hover {
   	color: #ffffff !important;
-  	background: #29a9df !important;	
+  	background: #a21317 !important;	
 }
 
 .navbar .btn-navbar {
@@ -241,8 +241,8 @@ header.container{background:transparent;}
 }
 
 .nav .active .dropdown-toggle .caret {
-  border-top-color: #29a9df !important;	
-  border-bottom-color: #29a9df !important;	
+  border-top-color: #a21317 !important;	
+  border-bottom-color: #a21317 !important;	
 }
 
 
@@ -494,7 +494,7 @@ html[xmlns] .slides {display: block;}
 
 .flex-direction-nav .flex-prev:hover,
 .flex-direction-nav .flex-next:hover {
-	background-color:#29a9df;
+	background-color:#a21317;
 	opacity: 1;
 }
 
@@ -578,7 +578,7 @@ html[xmlns] .slides {display: block;}
 
 .hero-unit {
 	background: #eee;
-	border-left: 4px solid #29a9df;
+	border-left: 4px solid #a21317;
 	padding: 10px;
 	margin: 15px auto 0px;
 	-webkit-border-radius: 0px;
@@ -687,27 +687,27 @@ html[xmlns] .slides {display: block;}
 	-webkit-border-radius: 50em;
 	-moz-border-radius: 50em;
 	border-radius: 50em;
-	-webkit-box-shadow: 0px 0px 0px 3px #29a9df;
-	   -moz-box-shadow: 0px 0px 0px 3px #29a9df;
-		    box-shadow: 0px 0px 0px 3px #29a9df;
+	-webkit-box-shadow: 0px 0px 0px 3px #a21317;
+	   -moz-box-shadow: 0px 0px 0px 3px #a21317;
+		    box-shadow: 0px 0px 0px 3px #a21317;
 	margin: 0 auto;
 	opacity: 1;
 }
 
 .circle-color-full {
-	background-color: #29a9df;
+	background-color: #a21317;
 	-webkit-border-radius: 50em;
 	-moz-border-radius: 50em;
 	border-radius: 50em;
-	-webkit-box-shadow: 0px 0px 0px 3px #29a9df;
-	   -moz-box-shadow: 0px 0px 0px 3px #29a9df;
-		    box-shadow: 0px 0px 0px 3px #29a9df;
+	-webkit-box-shadow: 0px 0px 0px 3px #a21317;
+	   -moz-box-shadow: 0px 0px 0px 3px #a21317;
+		    box-shadow: 0px 0px 0px 3px #a21317;
 	margin: 0 auto;
 	opacity: 1;
 }
 
 .big-color {
-	border: 20px solid #29a9df !important;
+	border: 20px solid #a21317 !important;
 }
 
 
@@ -846,11 +846,11 @@ input[type="button"]:hover {background:#aaa}
 	background: #555;
 }
 
-.button.color {color:#fff; background:#29a9df;}
+.button.color {color:#fff; background:#a21317;}
 .button.color:hover {background:#aaa;}
 
 input[type="button"] {
-	background: #29a9df;
+	background: #a21317;
 	color: #fff;
 }
 
@@ -976,8 +976,8 @@ input[type="button"] {
 
 .mr-rotato-prev:hover,
 .mr-rotato-next:hover {
-	background-color: #29a9df;
-	border-color: #29a9df;
+	background-color: #a21317;
+	border-color: #a21317;
 }
 
 /* Tabs
@@ -1080,7 +1080,7 @@ input[type="button"] {
 
 .meter > span:after, 
 .animate > span > spans li.current {
-	background:#29a9df;
+	background:#a21317;
 }
 
 /* Quotes
@@ -1110,7 +1110,7 @@ input[type="button"] {
 	}
 	
 	.quote, .author {
-		background: #29a9df;
+		background: #a21317;
 	}
 
 
@@ -1137,7 +1137,7 @@ input[type="button"] {
 	}
 	
 	.dropcap.color {
-		background: #29a9df;
+		background: #a21317;
 		color: #fff;
 	}
 
@@ -1473,7 +1473,7 @@ a.buy:hover {
 }
 
 .pricing-table .color-custom h3, .color-custom .buy {background-color: #1d7ea7;}
-.pricing-table .color-custom h4 {background-color: #29a9df;}
+.pricing-table .color-custom h4 {background-color: #a21317;}
 
 
 /* Google Map
@@ -1575,8 +1575,8 @@ a.buy:hover {
 
 #filters a:hover,
 .selected {
-	background-color: #29a9df !important;
-	border: 1px solid #29a9df !important;
+	background-color: #a21317 !important;
+	border: 1px solid #a21317 !important;
 	color: #fff !important;
 }
 
@@ -1642,7 +1642,7 @@ a.buy:hover {
 }
 
 .project-info strong {
-	color: #29a9df;
+	color: #a21317;
 }
 
 .launch {
@@ -1684,8 +1684,8 @@ a.buy:hover {
 .ie7 .pagination li {margin-right: 5px;}
 
 li.current {
-	background: #29a9df;
-	border: 1px solid #29a9df;
+	background: #a21317;
+	border: 1px solid #a21317;
 	color: #fff;
 }
 
@@ -1716,8 +1716,8 @@ li.current {
 .tags a:last-child {margin-right:0;}
 
 .tags a:hover {
-	background: #29a9df;
-	border: 1px solid #29a9df;
+	background: #a21317;
+	border: 1px solid #a21317;
 	color: #fff;
 }
 
@@ -1912,7 +1912,7 @@ li.current {
 }
 
 #footer-menu-links ul li a:hover {
-	color: #29a9df;
+	color: #a21317;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -1929,7 +1929,7 @@ li.current {
 	width: 30px;
 	height: 30px;
 	display: block;
-	background-color: #29a9df;
+	background-color: #a21317;
 	background-image: url(../img/scroll-top-top.png);
 	background-repeat: no-repeat;
 	background-position: 50%;
@@ -2017,7 +2017,7 @@ form#newsletter input[type=text] {
 }
 	
 form#newsletter input[type=submit] {
-	background: #29a9df;
+	background: #a21317;
 	color: #fff;
 	width: 25%;
 	float: left;
@@ -2120,17 +2120,17 @@ form#newsletter input[type=submit] {
 }
 
 .btn-primary {
-  background-color: #29a9df;
+  background-color: #a21317;
   color: #ffffff;
-  background-image: -moz-linear-gradient(top, #29a9df, #29a9df);
-  background-image: -ms-linear-gradient(top, #29a9df, #29a9df);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#29a9df), to(#29a9df));
-  background-image: -webkit-linear-gradient(top, #29a9df, #29a9df);
-  background-image: -o-linear-gradient(top, #29a9df, #29a9df);
-  background-image: linear-gradient(top, #29a9df, #29a9df);
+  background-image: -moz-linear-gradient(top, #a21317, #a21317);
+  background-image: -ms-linear-gradient(top, #a21317, #a21317);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a21317), to(#a21317));
+  background-image: -webkit-linear-gradient(top, #a21317, #a21317);
+  background-image: -o-linear-gradient(top, #a21317, #a21317);
+  background-image: linear-gradient(top, #a21317, #a21317);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'29a9df, endColorstr='#'29a9df, GradientType=0);
-  border-color: #29a9df #29a9df #29a9df;
+  border-color: #a21317 #a21317 #a21317;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
@@ -2140,7 +2140,7 @@ form#newsletter input[type=submit] {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #29a9df;
+  background-color: #a21317;
 }
 
 .btn-primary:active,
@@ -2207,12 +2207,12 @@ form#newsletter input[type=submit] {
 .btn-success {
   background-color: #5bb75b;
   color: #ffffff;
-  background-image: -moz-linear-gradient(top, #29a9df, #29a9df);
-  background-image: -ms-linear-gradient(top, #29a9df, #29a9df);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#29a9df), to(#29a9df));
-  background-image: -webkit-linear-gradient(top, #29a9df, #29a9df);
-  background-image: -o-linear-gradient(top, #29a9df, #29a9df);
-  background-image: linear-gradient(top, #29a9df, #29a9df);
+  background-image: -moz-linear-gradient(top, #a21317, #a21317);
+  background-image: -ms-linear-gradient(top, #a21317, #a21317);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a21317), to(#a21317));
+  background-image: -webkit-linear-gradient(top, #a21317, #a21317);
+  background-image: -o-linear-gradient(top, #a21317, #a21317);
+  background-image: linear-gradient(top, #a21317, #a21317);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'29a9df, endColorstr='#'29a9df, GradientType=0);
   border-color: #51a351 #51a351 #387038;
@@ -2224,7 +2224,7 @@ form#newsletter input[type=submit] {
 .btn-success.active,
 .btn-success.disabled,
 .btn-success[disabled] {
-  background-color: #29a9df;
+  background-color: #a21317;
 }
 
 .btn-success:active,
@@ -2467,3 +2467,6 @@ ul.links-list-alt li a{font-size: 14px;}
 
 .table.lists td a{color:#444;}
 .table.lists td a:hover{}
+a{color:#a21317 !important;}
+header a:hover{color:#fff !important;}
+
