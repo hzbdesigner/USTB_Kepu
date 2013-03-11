@@ -52,7 +52,7 @@
 								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>1 June 2011</span> <span><i class="mini-ico-user"></i> <a href="#">lucas</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 comments</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>
 					</div>	
 				</div>
 
@@ -65,7 +65,7 @@
 									内容描述内容描述
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>1 June 2011</span> <span><i class="mini-ico-user"></i> <a href="#">lucas</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 comments</a></span></div>	
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
 					</div>
 				</div>
 
@@ -77,7 +77,7 @@
 							内容描述内容描述
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>1 June 2011</span> <span><i class="mini-ico-user"></i> <a href="#">lucas</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 comments</a></span></div>	
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
 					</div>
 				</div>
 
@@ -89,7 +89,7 @@
 								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>1 June 2011</span> <span><i class="mini-ico-user"></i> <a href="#">lucas</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 comments</a></span></div>	
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
 					</div>
 				</div>
 
@@ -101,7 +101,7 @@
 								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>1 June 2011</span> <span><i class="mini-ico-user"></i> <a href="#">lucas</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 comments</a></span></div>	
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
 					</div>
 				</div>
 
@@ -113,7 +113,7 @@
 								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>1 June 2011</span> <span><i class="mini-ico-user"></i> <a href="#">lucas</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 comments</a></span></div>	
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
 					</div>
 				</div>
 

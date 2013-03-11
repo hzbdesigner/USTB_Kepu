@@ -2465,4 +2465,5 @@ ul.links-list-alt li a{font-size: 14px;}
 .span9.news-detail .content{padding:25px;}
 .span9.news-detail .content p{margin-bottom: 15px; text-indent: 2em;}
 
-
+.table.lists td a{color:#444;}
+.table.lists td a:hover{}

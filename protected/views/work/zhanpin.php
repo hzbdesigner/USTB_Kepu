@@ -2,7 +2,7 @@
 <div id="about">
 	<div class="title"><h3>作品——科普展品类</h3></div>
 
-	<table class="table table-striped ">
+	<table class="table table-striped lists">
 		<thead>
 			<tr>
 				<td>部门</td>
