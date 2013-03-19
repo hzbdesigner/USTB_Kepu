@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'USTB_Kepu',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -56,11 +56,12 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=127.0.0.1;dbname=hxrs',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=kepu',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'trhzb',
+			'password' => 'trhzb',
 			'charset' => 'utf8',
+			'tablePrefix'=>'kepu_',
 		),
 		
 		'errorHandler'=>array(
