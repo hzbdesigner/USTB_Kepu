@@ -1,15 +1,13 @@
-
-
 <ul class="nav nav-tabs">
 
 
-    <li class="<?php if($catalog_id == "all"){echo 'active';} ?>"><a href="<?php echo $this->createUrl('admin',array('column_id'=>$column_id,'catalog_id'=>"all")); ?>" >全部</a></li>
+    <li class="<?php if($cid == 0){echo 'active';} ?>"><a href="<?php echo $this->createUrl('admin',array('cid'=>0)); ?>" >全部</a></li>
     <?php 
     foreach ($catalogs as $catalog) {
     	$title=$catalog->title;
-    	$catalogid=$catalog->catalog_id;
-    	$url=$this->createUrl('admin',array('column_id'=>$column_id,'catalog_id'=>$catalogid));
-    	if($catalogid==$catalog_id){$active="active";}else{$active="";}
+    	$catalogid=$catalog->id;
+    	$url=$this->createUrl('admin',array('cid'=>$catalogid));
+    	if($catalogid==$cid){$active="active";}else{$active="";}
     	echo <<<EOD
     	<li class='$active'><a href='$url' >$title</a></li>
 EOD;
@@ -39,7 +37,7 @@ EOD;
 			foreach ($articles as $article) {
 				$cid=$article->cid;
 				$catalog=Catalog::model()->findByPk($cid);
-				$aid=$article->article_id;
+				$aid=$article->aid;
 				$url=$this->createUrl('/article/view',array('aid'=>$aid));
 				$delete_url=$this->createUrl('/admin/article/delete',array('aid'=>$aid));
 				$update_url=$this->createUrl('/admin/article/update',array('aid'=>$aid));
@@ -90,3 +88,4 @@ EOD;
 
 
 </div>
+

@@ -8,6 +8,7 @@ class ArticleController extends Controller
 	 */
 	public $layout='main';
 
+
 	/**
 	 * @return array action filters
 	 */
@@ -93,7 +94,7 @@ class ArticleController extends Controller
 				$model->attributes=$_POST['Article'];
 				if($model->save()){
 					
-					$this->redirect(array('admin'));
+					$this->redirect(array('admin',array('cid'=>0)));
 				}else{
 					$msg = '保存失败！'; //如果没有保存到数据库的话
 					$error = '请正确填写文章标题、分类、正文~！';
@@ -156,58 +157,56 @@ class ArticleController extends Controller
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
-	/**
-	 * Lists all models.
-	 */
-	//index.view是layout，不需要跳转
-	// public function actionIndex()
-	// {
-		
-	// 	$this->render('index',array(
-	// 		'dataProvider'=>$dataProvider,
-	// 	));
-	// }
 
-	/**
-	 * Manages all models.
-	 */
-	public function actionAdmin($cid)
+	public function actionAdmin($column_id,$catalog_id) //navbar上点击，全是all
 	{
 		
-		$param = array(
-			'order'=>'aid desc',
-		);
-		$criteria = new CDbCriteria($param);
-		if($cid != 0){
-			$criteria->addCondition('cid='.$cid);
+		//article的显示
+		$criteria = new CDbCriteria;
+		$criteria->order='article_id DESC';	
+		$criteria->addCondition("cid='$column_id'");//获取整个栏目的article
+		if($catalog_id != "all"){
+			$criteria->addCondition("catalog_id='$catalog_id'"); //获取栏目下某个catalog的article
 		}
+		$articles = Article::Model()->findAll($criteria);
 		
+		//tabbar上的catalog的显示，只需确定是那个栏目的catalog就成——因此值与栏目有关。
+		$criteria_ca = new CDbCriteria;
+		$criteria_ca->order='catalog_id DESC';	
+		$criteria_ca->addCondition("column_id='$column_id'");
+		$catalogs = Catalog::model()->findAll($criteria_ca);
 
 		//pages
 		$current_page = isset( $_REQUEST['page'] )?$_REQUEST['page']:1;
 		$count = Article::model()->count( $criteria);
 		$pages = new CPagination( $count );
+		
 		$pages->pageSize = 20;
 		$pages->applyLimit( $criteria );
 		$page_num = ceil( $count/$pages->pageSize );
 		
-		//数据
-		$articles = Article::model()->findAll($criteria);
-		$catalogs = Catalog::model()->findAll();
 		
-		// //渲染
+
+		//渲染
 		$sub_content=$this->renderPartial('admin',array(
+			//article
 			'articles'=>$articles,
+			//catalogs
+			'catalogs'=>$catalogs,
+			//pages
 			'pages' => $pages,
 			'current_page' => $current_page,
 			'count'=>$count,
-			'catalogs'=>$catalogs,
-			'cid'=>$cid,
-			),true);
+			//传进来的参数
+			'column_id'=>$column_id,
+			'catalog_id'=>$catalog_id,
+		),true);
 		
 		$this->render('index',array(
 			'sub_content'=>$sub_content,
-			
+			//传进来的参数
+			'column_id'=>$column_id,
+			'catalog_id'=>$catalog_id,	
 		));
 
 

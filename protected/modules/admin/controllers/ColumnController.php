@@ -1,16 +1,16 @@
 <?php
 
-class CatalogController extends Controller
+class ColumnController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	// public $layout='//layouts/column2';
 
-	/**
-	 * @return array action filters
-	 */
+	// /**
+	//  * @return array action filters
+	//  */
 	// public function filters()
 	// {
 	// 	return array(
@@ -62,16 +62,16 @@ class CatalogController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Catalog;
+		$model=new Column;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Catalog']))
+		if(isset($_POST['Column']))
 		{
-			$model->attributes=$_POST['Catalog'];
+			$model->attributes=$_POST['Column'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id'=>$model->cloumn_id));
 		}
 
 		$this->render('create',array(
@@ -91,11 +91,11 @@ class CatalogController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Catalog']))
+		if(isset($_POST['Column']))
 		{
-			$model->attributes=$_POST['Catalog'];
+			$model->attributes=$_POST['Column'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id'=>$model->cloumn_id));
 		}
 
 		$this->render('update',array(
@@ -122,7 +122,7 @@ class CatalogController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Catalog');
+		$dataProvider=new CActiveDataProvider('Column');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class CatalogController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Catalog('search');
+		$model=new Column('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Catalog']))
-			$model->attributes=$_GET['Catalog'];
+		if(isset($_GET['Column']))
+			$model->attributes=$_GET['Column'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -150,7 +150,7 @@ class CatalogController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Catalog::model()->findByPk($id);
+		$model=Column::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -162,7 +162,7 @@ class CatalogController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='catalog-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='column-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

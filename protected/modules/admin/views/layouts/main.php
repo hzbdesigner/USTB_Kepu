@@ -53,11 +53,27 @@
 		<div class="navbar navbar-static-top">
 		  <div class="navbar-inner">
 		  		<div class="container">
-				    <a class="brand" href="<?php echo $this->createUrl('/site') ;?>">北京科技大学——科普网</a>
+				    <a class="brand" href="<?php echo $this->createUrl('/site/index') ;?>">北京科技大学——科普网</a>
 				    <ul class="nav">
-				      <li class="<?php if ( $this->id=='product') {echo('active');}  ?>"><a href="<?php echo $this->createUrl('/admin/article/admin',array('cid'=>0)) ;?>">科技生活</a></li>
-				       <!-- <li class="<?php if ( $this->id=='brand') {echo('active');}  ?>"><a href="<?php echo $this->createUrl('/admin/brand/admin') ;?>">科普作品</a></li>
-				      <li class="<?php if ( $this->id=='activity') {echo('active');}  ?>"><a href="<?php echo $this->createUrl('/admin/activity/admin') ;?>">科普活动</a></li> -->
+				    	<?php
+				    		$param = array(
+								'order'=>'order_id asc',  
+							);
+							$criteria = new CDbCriteria($param);
+
+				    		$columns=Column::Model()->findAll($criteria);
+
+				    		foreach ($columns as $column) {
+				    			$columnId=$column->column_id;
+				    			$title=$column->title;
+				    			$url=$this->createUrl('/admin/article/admin' , array('column_id'=>$columnId,'catalog_id'=>"all"));
+				    			//$url=$this->createUrl('/admin/article/admin');
+				    			if($this->id==$columnId){$active="active";}else{$active=" ";}				    			
+				    			echo <<<EOD
+				    			<li class="$active"><a href="$url">$title</a></li>
+EOD;
+				    		}
+				    	?>
 				      <li><a href="#">页面</a></li>
 				      <li><a href="#">管理员</a></li>
 				      <li><a href="#">退出</a></li>

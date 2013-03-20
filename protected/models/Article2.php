@@ -4,20 +4,13 @@
  * This is the model class for table "{{article}}".
  *
  * The followings are the available columns in table '{{article}}':
- * @property integer $article_id
- * @property string $catalog_id
+ * @property integer $aid
+ * @property integer $cid
  * @property string $title
- * @property string $despic
- * @property string $date
- * @property integer $read_num
- * @property string $author
- * @property string $cid
- * @property string $content
  * @property string $des
- *
- * The followings are the available model relations:
- * @property Column $c
- * @property Catalog $catalog
+ * @property string $despic
+ * @property string $content
+ * @property string $date
  */
 class Article extends CActiveRecord
 {
@@ -47,13 +40,12 @@ class Article extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('catalog_id, title, despic, date, read_num, author, cid, content, des', 'required'),
-			array('read_num', 'numerical', 'integerOnly'=>true),
-			array('catalog_id, title, despic, author, cid', 'length', 'max'=>255),
-			array('des', 'length', 'max'=>1024),
+			array('cid, title, des, despic,', 'required'), // content, date
+			array('cid', 'numerical', 'integerOnly'=>true),
+			array('title, despic', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('article_id, catalog_id, title, despic, date, read_num, author, cid, content, des', 'safe', 'on'=>'search'),
+			array('aid, cid, title, des, despic, content, date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,8 +57,6 @@ class Article extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'c' => array(self::BELONGS_TO, 'Column', 'cid'),
-			'catalog' => array(self::BELONGS_TO, 'Catalog', 'catalog_id'),
 		);
 	}
 
@@ -76,16 +66,15 @@ class Article extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'article_id' => 'Article',
-			'catalog_id' => 'Catalog',
-			'title' => 'Title',
-			'despic' => 'Despic',
-			'date' => 'Date',
-			'read_num' => 'Read Num',
-			'author' => 'Author',
+			'aid' => 'Aid',
 			'cid' => 'Cid',
-			'content' => 'Content',
+			'title' => 'Title',
 			'des' => 'Des',
+			'despic' => 'Despic',
+			'content' => 'Content',
+			'date' => 'Date',
+			'read_num' => 'Read_num',
+			'author' => 'Author',
 		);
 	}
 
@@ -100,16 +89,13 @@ class Article extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('article_id',$this->article_id);
-		$criteria->compare('catalog_id',$this->catalog_id,true);
+		$criteria->compare('aid',$this->aid);
+		$criteria->compare('cid',$this->cid);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('despic',$this->despic,true);
-		$criteria->compare('date',$this->date,true);
-		$criteria->compare('read_num',$this->read_num);
-		$criteria->compare('author',$this->author,true);
-		$criteria->compare('cid',$this->cid,true);
-		$criteria->compare('content',$this->content,true);
 		$criteria->compare('des',$this->des,true);
+		$criteria->compare('despic',$this->despic,true);
+		$criteria->compare('content',$this->content,true);
+		$criteria->compare('date',$this->date,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

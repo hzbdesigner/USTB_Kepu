@@ -4,14 +4,8 @@
  * This is the model class for table "{{catalog}}".
  *
  * The followings are the available columns in table '{{catalog}}':
- * @property string $catalog_id
+ * @property integer $id
  * @property string $title
- * @property string $column_id
- * @property integer $order_id
- *
- * The followings are the available model relations:
- * @property Article[] $articles
- * @property Column $column
  */
 class Catalog extends CActiveRecord
 {
@@ -41,12 +35,11 @@ class Catalog extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('catalog_id, title, column_id, order_id', 'required'),
-			array('order_id', 'numerical', 'integerOnly'=>true),
-			array('catalog_id, title, column_id', 'length', 'max'=>255),
+			array('title', 'required'),
+			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('catalog_id, title, column_id, order_id', 'safe', 'on'=>'search'),
+			array('id, title', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,8 +51,6 @@ class Catalog extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'articles' => array(self::HAS_MANY, 'Article', 'catalog_id'),
-			'column' => array(self::BELONGS_TO, 'Column', 'column_id'),
 		);
 	}
 
@@ -69,10 +60,8 @@ class Catalog extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'catalog_id' => 'Catalog',
+			'id' => 'ID',
 			'title' => 'Title',
-			'column_id' => 'Column',
-			'order_id' => 'Order',
 		);
 	}
 
@@ -87,10 +76,8 @@ class Catalog extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('catalog_id',$this->catalog_id,true);
+		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('column_id',$this->column_id,true);
-		$criteria->compare('order_id',$this->order_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
