@@ -19,9 +19,9 @@ EOD;
 </ul>
 <div class="tab-content">
 	<div class="tab-pane active" id="tab1">
-	<?php
-		echo '<p>统计：共有条<?php echo $count ; ?>记录，共<?php echo $pages ; ?>页，这是第<?php echo $current_page; ?>页。</p>';
-	?>
+	<div >
+	统计信息: <?php echo '总共 '.$count.'篇文章' ?>
+	</div>
 	<table class="table table-striped table-condensed ">
 		<thead>
 			<tr>

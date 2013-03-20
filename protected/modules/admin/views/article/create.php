@@ -6,29 +6,58 @@
 			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$error</div>";
 			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$msg</div>";
 		}
+		
+
 	?>
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/create')?>" method='POST' enctype="multipart/form-data" >
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/create',array('column_id'=>$column_id))?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
 			<legend>新建文章</legend>
+			<div class="control-group">
+				<label class="control-label">栏目</label>
+				<?php
+				$criteria_cl = new CDbCriteria;
+				$criteria_cl->addCondition("column_id='$column_id'");
+				$column = Column::Model()->findAll($criteria_cl);
+				//if($column){echo "存在";}else{echo "不存在";}
+				if(isset($column)){ 
+					$value=$column->column_id;
+					$title=$column->title; 
+					echo <<<EOD
+					<label class="radio inline">
+						<input type="radio"  name="Article[column_id]" value='$value' />
+						<span style="width:90px;">$title</span>
+					</label>
+EOD;
+				}
+				?>
+			</div>
+
 			<div class="control-group">
 				<label class="control-label">标题</label>
 				<div class="controls">
 					<input class="span6" type="text" name='Article[title]' placeholder="输入文章标题"/>
 				</div>
 			</div>
+
 			<div class="control-group">
-				<label class="control-label">类型</label>
+				<label class="control-label">分类</label>
 				<div class="controls">
 					<?php
 					foreach($catalogs as $catalog){
 						echo <<<EOD
 						<label class="radio inline">
-							<input type="radio" value='$catalog[id]' name="Article[cid]" />
-							<span style="width:60px;">$catalog[title]</span>
+							<input type="radio"  name="Article[catalog_id]" />
+							<span style="width:90px;">$catalog[title]</span>
 						</label>
 EOD;
 					}
 					?>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">发布部门</label>
+				<div class="controls">
+					<input class="span2" type="text" name='Article[author]' placeholder="输入发布部门"/>
 				</div>
 			</div>
 			<div class="control-group">
@@ -37,6 +66,7 @@ EOD;
 					<textarea rows="3" class="span5" name='Article[des]'></textarea>
 				</div>
 			</div>
+			
 			<div class="control-group">
 				<label class="control-label">图片</label>
 				<div class="controls">

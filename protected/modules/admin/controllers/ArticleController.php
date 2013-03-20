@@ -61,7 +61,7 @@ class ArticleController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($column_id)
 	{
 		$msg = '';
 		$error = '';
@@ -94,7 +94,7 @@ class ArticleController extends Controller
 				$model->attributes=$_POST['Article'];
 				if($model->save()){
 					
-					$this->redirect(array('admin',array('cid'=>0)));
+					//$this->redirect(array('admin',array(''=>0)));
 				}else{
 					$msg = '保存失败！'; //如果没有保存到数据库的话
 					$error = '请正确填写文章标题、分类、正文~！';
@@ -105,16 +105,29 @@ class ArticleController extends Controller
 			}	
 		}
 		
-		//数据存储完毕
-		$catalogs=Catalog::model()->findAll();
+		//假如进入该页面，而不是在本页面提交
+
+		//catalog数据获取
+		$criteria_ca = new CDbCriteria;
+		$criteria_ca->order='catalog_id DESC';	
+		$criteria_ca->addCondition("column_id='$column_id'");
+		$catalogs = Catalog::model()->findAll($criteria_ca);
+
+		
+
+
+		//页面渲染
 		$sub_content=$this->renderPartial('create',array(
 			'catalogs'=>$catalogs,
+			'column_id'=>$column_id,
 			'error'=>$error,
-			// 'model'=>$model,
 			'msg'=>$msg,
 		),true);
-
-		$this->render('index',array('sub_content'=>$sub_content));
+		// $criteria_cl = new CDbCriteria;
+		// $criteria_cl->addCondition("column_id='$column_id'");
+		// $column = Column::model()->findAll($criteria_cl);
+		
+		$this->render('index',array('sub_content'=>$sub_content,'column_id'=>$column_id));
 		
 	}
 
@@ -187,7 +200,7 @@ class ArticleController extends Controller
 		
 		
 
-		//渲染
+		//渲染admin
 		$sub_content=$this->renderPartial('admin',array(
 			//article
 			'articles'=>$articles,
@@ -202,11 +215,19 @@ class ArticleController extends Controller
 			'catalog_id'=>$catalog_id,
 		),true);
 		
+		//渲染index
+		$criteria_cl = new CDbCriteria;
+		$criteria_cl->addCondition("column_id='$column_id'");
+		$column = Column::model()->findAll($criteria_cl);
+		//if($column){echo "true" ;}else{echo "false";}
+		
 		$this->render('index',array(
+			//'column'=>$column,
 			'sub_content'=>$sub_content,
 			//传进来的参数
 			'column_id'=>$column_id,
 			'catalog_id'=>$catalog_id,	
+			
 		));
 
 
