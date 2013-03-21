@@ -48,7 +48,7 @@
 		<div class="navbar navbar-static-top">
 		  <div class="navbar-inner">
 		  		<div class="container">
-				    <a class="brand" href="<?php echo $this->createUrl('/site/index') ;?>">北京科技大学——科普网</a>
+				    <a class="brand" href="<?php echo $this->createUrl('/site/index') ;?>">北科大科普网</a>
 				    <ul class="nav">
 				    	<?php
 				    		$param = array(

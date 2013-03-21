@@ -52,7 +52,7 @@ EOD;
 						echo <<<EOD
 						<label class="radio inline">
 							<input type="radio"  name="Article[catalog_id]" value="$catalog_id"/>
-							<span style="width:90px;">$catalog[title]</span>
+							<span style="width:90px;overflow:hidden;">$catalog[title]</span>
 						</label>
 EOD;
 					}
