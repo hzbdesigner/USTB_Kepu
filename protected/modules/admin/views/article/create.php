@@ -15,21 +15,20 @@
 			<div class="control-group">
 				<label class="control-label">栏目</label>
 				<?php
-				$criteria_cl = new CDbCriteria;
-				$criteria_cl->addCondition("column_id='$column_id'");
-				$column = Column::Model()->findAll($criteria_cl);
-				//if($column){echo "存在";}else{echo "不存在";}
-				if(isset($column)){ 
-					$value=$column->column_id;
-					$title=$column->title; 
-					echo <<<EOD
-					<label class="radio inline">
-						<input type="radio"  name="Article[column_id]" value='$value' />
-						<span style="width:90px;">$title</span>
-					</label>
+					foreach($catalogs as $catalog){
+						$column=$catalog->column;
+						$title=$column->title;
+					}
+					if($column_id=='news'){$title="科技新闻";}
+					
+						echo <<<EOD
+						<label class="radio inline">
+							<input type="radio"  name="Article[column_id]" value="$column_id" checked="checked" />
+							<span style="width:90px;">$title</span>
+						</label>
 EOD;
-				}
-				?>
+					
+					?>
 			</div>
 
 			<div class="control-group">
@@ -44,6 +43,7 @@ EOD;
 				<div class="controls">
 					<?php
 					foreach($catalogs as $catalog){
+						
 						echo <<<EOD
 						<label class="radio inline">
 							<input type="radio"  name="Article[catalog_id]" />

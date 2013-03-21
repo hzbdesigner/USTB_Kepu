@@ -177,7 +177,7 @@ class ArticleController extends Controller
 		//article的显示
 		$criteria = new CDbCriteria;
 		$criteria->order='article_id DESC';	
-		$criteria->addCondition("cid='$column_id'");//获取整个栏目的article
+		$criteria->addCondition("column_id='$column_id'");//获取整个栏目的article
 		if($catalog_id != "all"){
 			$criteria->addCondition("catalog_id='$catalog_id'"); //获取栏目下某个catalog的article
 		}

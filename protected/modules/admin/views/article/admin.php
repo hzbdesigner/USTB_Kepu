@@ -37,7 +37,7 @@ EOD;
 		<tbody>
 			<?php 
 			foreach ($articles as $article) {
-				$cid=$article->cid;
+				$cid=$article->column_id;
 				$catalog=Catalog::model()->findByPk($cid);
 				$aid=$article->article_id;
 				$url=$this->createUrl('/article/view',array('aid'=>$aid));
