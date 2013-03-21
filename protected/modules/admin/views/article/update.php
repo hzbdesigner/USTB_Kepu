@@ -14,9 +14,9 @@
 		
 
 	?>
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/create',array('column_id'=>$column_id))?>" method='POST' enctype="multipart/form-data" >
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/update',array('column_id'=>$column_id,'article_id'=>$article_id));?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
-			<legend>新建文章</legend>
+			<legend>修改文章</legend>
 			<div class="control-group">
 				<label class="control-label">栏目</label>
 				<?php
@@ -39,7 +39,7 @@ EOD;
 			<div class="control-group">
 				<label class="control-label">标题</label>
 				<div class="controls">
-					<input class="span6" type="text" name='Article[title]' placeholder="输入文章标题"/>
+					<input class="span6" type="text" name='Article[title]' placeholder="输入文章标题" value='<?php echo $model->title ;?>'/>
 				</div>
 			</div>
 
@@ -49,12 +49,23 @@ EOD;
 					<?php
 					foreach($catalogs as $catalog){
 						$catalog_id=$catalog->catalog_id;
+						// echo $model->catalog_id;
+						// echo $catalog_id;
+						if($catalog_id==$model->catalog_id){ 
 						echo <<<EOD
 						<label class="radio inline">
-							<input type="radio"  name="Article[catalog_id]" value="$catalog_id"/>
+							<input type="radio"  name="Article[catalog_id]" value="$catalog_id" checked="checked"/>
 							<span style="width:90px;">$catalog[title]</span>
 						</label>
 EOD;
+						}else{
+							echo <<<EOD
+						<label class="radio inline">
+							<input type="radio"  name="Article[catalog_id]" value="$catalog_id" />
+							<span style="width:90px;">$catalog[title]</span>
+						</label>
+EOD;
+						}
 					}
 					?>
 				</div>
@@ -62,19 +73,20 @@ EOD;
 			<div class="control-group">
 				<label class="control-label">发布部门</label>
 				<div class="controls">
-					<input class="span2" type="text" name='Article[author]' placeholder="输入发布部门"/>
+					<input class="span2" type="text" name='Article[author]' placeholder="输入发布部门" value='<?php echo $model->author ;?>'/>
 				</div>
 			</div>
 			<div class="control-group">
 				<label class="control-label">简述</label>
 				<div class="controls">
-					<textarea rows="3" class="span5" name='Article[des]'></textarea>
+					<textarea rows="3" class="span5" name='Article[des]' ><?php echo $model->des ;?></textarea>
 				</div>
 			</div>
 			
 			<div class="control-group">
 				<label class="control-label">图片</label>
 				<div class="controls">
+					<img src="<?php echo $model->despic; ?>" />
 					<input type="file"  name="despic"/>
 				</div>
 			</div>
@@ -106,7 +118,7 @@ $(function(){
 	var Ueditor = new baidu.editor.ui.Editor({
 		UEDITOR_HOME_URL:'<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/',
 		imagePath:"http://<?php echo $_SERVER['HTTP_HOST'].Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/php/",
-		initialContent:'请输入文章内容，测试',
+		initialContent:'<?php echo $model->content; ?>',
 		textarea:'Article[content]'
 	});
 	Ueditor.render('article_content');

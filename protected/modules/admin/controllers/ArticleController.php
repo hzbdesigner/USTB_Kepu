@@ -141,23 +141,69 @@ class ArticleController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
+	public function actionUpdate($column_id,$article_id)
 	{
-		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
+		$msg = '';
+		$error = '';
+		$model=$this->loadModel($article_id);
 		if(isset($_POST['Article']))
-		{
+		{	
+			//属性这么多，怎么验证先后啊~~
+			//图片验证
+			if (!empty($_FILES)){ 
+				//尼玛，只要有这个控件，就能进来
+				$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
+				
+				if(!empty($_FILES['despic']['name'])){
+					
+					$ext = pathinfo($_FILES['despic']['name'],PATHINFO_EXTENSION);
+					if ( in_array( $ext ,$fileTypes ) ){   
+						$file_name = 'despic_'.time().rand(0,999).'.'.$ext;
+						$despic_file_path =  Yii::app()->basePath.'/../assets_admin/upload/'.$file_name;//设置存储路径（包括自己的名字）
+						move_uploaded_file( $_FILES['despic']['tmp_name'] , $despic_file_path);  //拷贝副本，将副本文件存储到新的位置。
+						
+						$_POST['Article']['despic'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/assets_admin/upload/'.$file_name;
+					}else{
+						$msg = '请上传 png/jpg/gif 格式的图片';//如果上传的文件格式不对的话
+					}
+				}else{
+					$msg="请上传图片1"; //如果图片名为空的话
+				}
+			}else{
+				$msg = '请上传图片'; //如果$_file为空的话
+			}
+
 			$model->attributes=$_POST['Article'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->aid));
+			if($model->save()){
+				$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
+				//尼玛，redirect和createUrl不一样
+			}else{
+				$msg = '保存失败！'; //如果没有保存到数据库的话
+				$error = '请正确填写文章标题、分类、正文~！';
+
+			}
+			
 		}
 
-		$this->render('update',array(
+		
+		//catalogs
+		$criteria_ca = new CDbCriteria;
+		$criteria_ca->order='catalog_id DESC';	
+		$criteria_ca->addCondition("column_id='$column_id'");
+		$catalogs = Catalog::model()->findAll($criteria_ca);
+
+		//页面渲染
+		$sub_content=$this->renderPartial('update',array(
+			'catalogs'=>$catalogs,
+			'column_id'=>$column_id,
+			'article_id'=>$article_id,
 			'model'=>$model,
-		));
+			'error'=>$error,
+			'msg'=>$msg,
+		),true);
+		
+		$this->render('index',array('sub_content'=>$sub_content,'column_id'=>$column_id));
+		
 	}
 
 	/**

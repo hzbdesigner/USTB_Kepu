@@ -14,7 +14,7 @@
 		
 
 	?>
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/create',array('column_id'=>$column_id))?>" method='POST' enctype="multipart/form-data" >
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/create',array('column_id'=>$column_id));?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
 			<legend>新建文章</legend>
 			<div class="control-group">
