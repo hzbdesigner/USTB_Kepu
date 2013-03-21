@@ -58,12 +58,14 @@
 
 				    		$columns=Column::Model()->findAll($criteria);
 
+				    		
+
 				    		foreach ($columns as $column) {
 				    			$columnId=$column->column_id;
 				    			$title=$column->title;
 				    			$url=$this->createUrl('/admin/article/admin' , array('column_id'=>$columnId,'catalog_id'=>"all"));
 				    			//$url=$this->createUrl('/admin/article/admin');
-				    			if($this->id==$columnId){$active="active";}else{$active=" ";}				    			
+				    			if($column_id==$columnId){$active="active";}else{$active=" ";}				    			
 				    			echo <<<EOD
 				    			<li class="$active"><a href="$url">$title</a></li>
 EOD;
@@ -71,7 +73,7 @@ EOD;
 				    	?>
 				      <li><a href="#">页面</a></li>
 				      <li><a href="#">管理员</a></li>
-				      <li><a href="#">退出</a></li>
+				      <li><a href="<?php echo $this->createUrl('/admin/default/logout'); ?>">退出</a></li>
 				    </ul>
 			    </div>
 		   

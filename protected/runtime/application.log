@@ -2268,3 +2268,327 @@ Stack trace:
 REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/update/column_id/life
 HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/update/column_id/life/article_id/30
 ---
+2013/03/21 15:35:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kepu.User' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `User`.
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 15:36:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kepu.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 15:36:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kepu.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 15:36:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kepu.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 15:53:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/product/index".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/product/i...')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/product/index
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 16:12:30 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (/Applications/MAMP/htdocs/hzb/framework/web/CHttpSession.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/auth/CWebUser.php(228): CWebUser->changeIdentity()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/models/LoginForm.php(71): CWebUser->login()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(64): LoginForm->login()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): DefaultController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): DefaultController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/default/login
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/models/LoginForm.php (71)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php (64)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 16:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:23:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:24:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 16:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:25:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/news".' in /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/news')
+#1 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/news
+---
+2013/03/21 16:59:19 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (/Applications/MAMP/htdocs/hzb/framework/web/CHttpSession.php:182)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/auth/CWebUser.php(228): CWebUser->changeIdentity()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/models/LoginForm.php(71): CWebUser->login()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(62): LoginForm->login()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): DefaultController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): DefaultController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/default/login
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/models/LoginForm.php (71)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php (62)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 17:21:18 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:50:11 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:50:11 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:50:11 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:50:20 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:50:23 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:50:35 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('login', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:52:38 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/admin/default/login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('/admin/default/...', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('/admin/default/...', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---
+2013/03/21 17:52:41 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/admin/default/login".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): CController->renderPartial('/admin/default/...', Array, true)
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/SiteController.php(99): CController->render('/admin/default/...', Array)
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#8 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/site/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin
+---

@@ -1,16 +1,23 @@
-<?php
-$this->breadcrumbs=array(
-	$this->module->id,
-);
-?>
 
-<h1><?php echo $this->uniqueId . '/' . $this->action->id; ?></h1>
 
-<p>
-This is the view content for action "<?php echo $this->action->id; ?>".
-The action belongs to the controller "<?php echo get_class($this); ?>" in the "<?php echo $this->module->id; ?>" module.
-这个页面是要放登录表单的！！！
-</p>
-<p>
-You may customize this page by editing <tt><?php echo __FILE__; ?></tt>
-</p>
+
+	<div class="container login">
+		<form class="bs-docs-example form-horizontal" action='<?php echo $this->createUrl('/admin/default/login') ?>' method='post'>
+			<fieldset>
+				<legend>管理员登录</legend>
+				<div class="control-group">
+					<span>用户名</span>
+					<input type="text"   placeholder="输入用户名" name='LoginForm[email]'/>
+				</div>
+				<div class="control-group">
+					<span>密&nbsp;&nbsp;&nbsp;码</span>
+					<input type="password"   placeholder="输入密码" name='LoginForm[password]'/>
+				</div>
+				<div class="control-group">
+					<button class="btn" >登&nbsp;&nbsp;录</button>
+					<label><input type="checkbox" name='LoginForm[rememberMe]'>记住我</label>
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
