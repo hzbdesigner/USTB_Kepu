@@ -57,7 +57,7 @@ class Column extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'articles' => array(self::HAS_MANY, 'Article', 'cid'),
+			'articles' => array(self::HAS_MANY, 'Article', 'column_id'),
 			'catalogs' => array(self::HAS_MANY, 'Catalog', 'column_id'),
 		);
 	}

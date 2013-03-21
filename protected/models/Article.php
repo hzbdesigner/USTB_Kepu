@@ -11,12 +11,12 @@
  * @property string $date
  * @property integer $read_num
  * @property string $author
- * @property string $cid
+ * @property string $column_id
  * @property string $content
  * @property string $des
  *
  * The followings are the available model relations:
- * @property Column $c
+ * @property Column $column
  * @property Catalog $catalog
  */
 class Article extends CActiveRecord
@@ -47,13 +47,13 @@ class Article extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			//array('catalog_id, title, despic, date, read_num, author, cid, content, des', 'required'),
+			array('catalog_id, title, column_id, content', 'required'), //despic, date, read_num,author,  des，content
 			array('read_num', 'numerical', 'integerOnly'=>true),
-			array('catalog_id, title, despic, author, cid', 'length', 'max'=>255),
+			array('catalog_id, title, despic, author, column_id', 'length', 'max'=>255),
 			array('des', 'length', 'max'=>1024),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('article_id, catalog_id, title, despic, date, read_num, author, cid, content, des', 'safe', 'on'=>'search'),
+			array('article_id, catalog_id, title, despic, date, read_num, author, column_id, content, des', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,7 +65,7 @@ class Article extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'c' => array(self::BELONGS_TO, 'Column', 'cid'),
+			'column' => array(self::BELONGS_TO, 'Column', 'column_id'),
 			'catalog' => array(self::BELONGS_TO, 'Catalog', 'catalog_id'),
 		);
 	}
@@ -83,7 +83,7 @@ class Article extends CActiveRecord
 			'date' => 'Date',
 			'read_num' => 'Read Num',
 			'author' => 'Author',
-			'cid' => 'Cid',
+			'column_id' => 'Column',
 			'content' => 'Content',
 			'des' => 'Des',
 		);
@@ -107,7 +107,7 @@ class Article extends CActiveRecord
 		$criteria->compare('date',$this->date,true);
 		$criteria->compare('read_num',$this->read_num);
 		$criteria->compare('author',$this->author,true);
-		$criteria->compare('cid',$this->cid,true);
+		$criteria->compare('column_id',$this->column_id,true);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('des',$this->des,true);
 

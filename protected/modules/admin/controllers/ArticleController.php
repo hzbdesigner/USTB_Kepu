@@ -70,39 +70,44 @@ class ArticleController extends Controller
 			//属性这么多，怎么验证先后啊~~
 			//图片验证
 			if (!empty($_FILES)){ 
+				//尼玛，只要有这个控件，就能进来
 				$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
-				$fileParts = pathinfo($_FILES['despic']['name']);
-				$ext = strtolower( $fileParts['extension'] ); //文件类型转为小写~~
 				
-				if ( in_array( $ext ,$fileTypes ) ){   //是否在这个数组中？？
+				if(!empty($_FILES['despic']['name'])){
 					
-					$file_name = 'despic_'.time().rand(0,999).'.'.$ext;//文件命名，重新名一个名
-					$despic_file_path =  Yii::app()->basePath.'/../assets_admin/upload/'.$file_name;//设置存储路径（包括自己的名字）
-					move_uploaded_file( $_FILES['despic']['tmp_name'] , $despic_file_path);  //拷贝副本，将副本文件存储到新的位置。
-					
-					$_POST['Article']['despic'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/assets_admin/upload/'.$file_name;
+					$ext = pathinfo($_FILES['despic']['name'],PATHINFO_EXTENSION);
+					if ( in_array( $ext ,$fileTypes ) ){   
+						$file_name = 'despic_'.time().rand(0,999).'.'.$ext;
+						$despic_file_path =  Yii::app()->basePath.'/../assets_admin/upload/'.$file_name;//设置存储路径（包括自己的名字）
+						move_uploaded_file( $_FILES['despic']['tmp_name'] , $despic_file_path);  //拷贝副本，将副本文件存储到新的位置。
+						
+						$_POST['Article']['despic'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/assets_admin/upload/'.$file_name;
+					}else{
+						$msg = '请上传 png/jpg/gif 格式的图片';//如果上传的文件格式不对的话
+					}
 				}else{
-					$msg = '请上传 png/jpg/gif 格式的图片LOGO';//如果上传的文件格式不对的话
+					$msg="请上传图片1"; //如果图片名为空的话
 				}
 			}else{
 				$msg = '请上传图片'; //如果$_file为空的话
 			}
 
-			if( $_POST['Article']['title'] ){
 						
-				$model=new Article;
-				$model->attributes=$_POST['Article'];
-				if($model->save()){
-					
-					//$this->redirect(array('admin',array(''=>0)));
-				}else{
-					$msg = '保存失败！'; //如果没有保存到数据库的话
-					$error = '请正确填写文章标题、分类、正文~！';
-
-				}
+			$model=new Article;
+			$model->attributes=$_POST['Article'];
+			// echo $model->title;
+			// echo $model->catalog_id;
+			// echo $model->column_id;
+			// echo $model->content;
+			if($model->save()){
+				$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
+				//尼玛，redirect和createUrl不一样
 			}else{
-				$msg = '请填写名称！'; //Article对象没有name属性的话
-			}	
+				$msg = '保存失败！'; //如果没有保存到数据库的话
+				$error = '请正确填写文章标题、分类、正文~！';
+
+			}
+			
 		}
 		
 		//假如进入该页面，而不是在本页面提交
@@ -160,10 +165,10 @@ class ArticleController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($aid)
+	public function actionDelete($column_id,$article_id)
 	{
-		$this->loadModel($aid)->delete();
-		$this->redirect(array('admin'));
+		$this->loadModel($article_id)->delete();
+		$this->redirect(array('admin','column_id'=>$column_id,'catalog_id'=>"all"));
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
@@ -238,9 +243,9 @@ class ArticleController extends Controller
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer the ID of the model to be loaded
 	 */
-	public function loadModel($id)
+	public function loadModel($article_id)
 	{
-		$model=Article::model()->findByPk($id);
+		$model=Article::model()->findByPk($article_id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

@@ -1281,3 +1281,821 @@ REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/create/column_id/news
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/create.php (27)
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (125)
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:33:41 [warning] [application] Failed to set unsafe attribute "column_id" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:33:41 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:33:41 [error] [exception.CException] exception 'CException' with message 'Property "Article.cid" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/db/ar/CActiveRecord.php(144): CComponent->__get('cid')
+#1 /Applications/MAMP/htdocs/hzb/framework/validators/CStringValidator.php(80): CActiveRecord->__get('cid')
+#2 /Applications/MAMP/htdocs/hzb/framework/validators/CValidator.php(214): CStringValidator->validateAttribute(Object(Article), 'cid')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CModel.php(158): CValidator->validate(Object(Article), NULL)
+#4 /Applications/MAMP/htdocs/hzb/framework/db/ar/CActiveRecord.php(795): CModel->validate(NULL)
+#5 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(95): CActiveRecord->save()
+#6 [internal function]: ArticleController->actionCreate('life')
+#7 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/Article/c...')
+#14 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/create/column_id/life
+---
+2013/03/21 03:37:24 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:38:25 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:40:01 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:40:45 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:40:48 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:41:27 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:41:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`kepu`.`kepu_article`, CONSTRAINT `kepu_article_ibfk_1` FOREIGN KEY (`catalog_id`) REFERENCES `kepu_catalog` (`catalog_id`)). The SQL statement executed was: INSERT INTO `kepu_article` (`column_id`, `title`, `catalog_id`, `author`, `des`, `despic`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (96)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:41:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`kepu`.`kepu_article`, CONSTRAINT `kepu_article_ibfk_1` FOREIGN KEY (`catalog_id`) REFERENCES `kepu_catalog` (`catalog_id`)). The SQL statement executed was: INSERT INTO `kepu_article` (`column_id`, `title`, `catalog_id`, `author`, `des`, `despic`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in /Applications/MAMP/htdocs/hzb/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /Applications/MAMP/htdocs/hzb/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(96): CActiveRecord->save()
+#3 [internal function]: ArticleController->actionCreate('life')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('create')
+#10 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/Article/c...')
+#11 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/create/column_id/life
+---
+2013/03/21 03:41:40 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:42:34 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:42:37 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:43:02 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:43:59 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:16 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:20 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:20 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:21 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:21 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:21 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:21 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:21 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:22 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:22 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:22 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:45:22 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:46:19 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:46:19 [error] [php] Undefined variable: catalog_id (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/create.php:46)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(870): ArticleController->renderFile()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(128): ArticleController->renderPartial()
+#2 unknown(0): ArticleController->actionCreate()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/create.php (46)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (128)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:48:44 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:48:52 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:49:11 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:75)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (75)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:49:28 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:55:05 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (94)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 03:58:01 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:04:23 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:04:28 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:04:52 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:06:17 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:06:17 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:94) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(99): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (99)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:06:44 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:06:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/a...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/0%5Bcolumn_id%5D/life/0%5Bcatalog_id%5D/all
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/create/column_id/life
+---
+2013/03/21 04:13:33 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:13:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/a...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/0%5Bcolumn_id%5D/life/0%5Bcatalog_id%5D/all
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/create/column_id/life
+---
+2013/03/21 04:57:10 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:57:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/a...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/0%5Bcolumn_id%5D/life/0%5Bcatalog_id%5D/all
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/create/column_id/life
+---
+2013/03/21 04:57:47 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 04:57:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/a...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/0%5Bcolumn_id%5D/life/0%5Bcatalog_id%5D/all
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/create/column_id/life
+---
+2013/03/21 04:59:44 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:07:33 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:23:29 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:24:24 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:24:26 [warning] [application] Failed to set unsafe attribute "acontent" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (93)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:26:41 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:75)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (75)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:34:30 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:75)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (75)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:35:41 [error] [php] Use of undefined constant extension - assumed 'extension' (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:75)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (75)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:36:00 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:75)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (75)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:42:10 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:76)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (76)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:42:51 [error] [php] Array to string conversion (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:76)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (76)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 05:46:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/a...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 05:54:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/a...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:00:59 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php:43)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(870): ArticleController->renderFile()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(222): ArticleController->renderPartial()
+#2 unknown(0): ArticleController->actionAdmin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php (43)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (222)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:01:01 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php:43)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(870): ArticleController->renderFile()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(222): ArticleController->renderPartial()
+#2 unknown(0): ArticleController->actionAdmin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php (43)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (222)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:01:01 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php:43)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(870): ArticleController->renderFile()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(222): ArticleController->renderPartial()
+#2 unknown(0): ArticleController->actionAdmin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php (43)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (222)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:01:01 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php:43)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(870): ArticleController->renderFile()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(222): ArticleController->renderPartial()
+#2 unknown(0): ArticleController->actionAdmin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php (43)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (222)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:01:01 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php:43)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(870): ArticleController->renderFile()
+#1 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(222): ArticleController->renderPartial()
+#2 unknown(0): ArticleController->actionAdmin()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/article/admin.php (43)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (222)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:01:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/article_id/8
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:02:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/article_id/8
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:03:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/article_id/8
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:05:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/article_id/10
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:05:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/article_id/10
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:06:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('update')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/u...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/update/column_id/life/article_id/10
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:07:56 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:75) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:09:47 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:79)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (79)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:10:08 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:79)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (79)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:14:05 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:78)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (78)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:25:44 [error] [php] Undefined index: extension (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:78)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (78)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:26:13 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:26:30 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:26:48 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:26:51 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:27:34 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:27:37 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:27:46 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:41:31 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(106): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (106)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:42:06 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(107): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (107)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:46:06 [error] [php] Undefined index: extensions (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:78)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (78)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:49:52 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:77) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(108): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionCreate()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/Article/create/column_id/life
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (108)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/21 06:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:255
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(175): ArticleController->loadModel('18')
+#1 [internal function]: ArticleController->actionDelete('life', '18')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/life/article_id/18
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/21 06:54:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('update')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/u...')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/update/column_id/life/article_id/29
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---

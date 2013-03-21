@@ -37,16 +37,16 @@ EOD;
 		<tbody>
 			<?php 
 			foreach ($articles as $article) {
-				$cid=$article->column_id;
-				$catalog=Catalog::model()->findByPk($cid);
-				$aid=$article->article_id;
-				$url=$this->createUrl('/article/view',array('aid'=>$aid));
-				$delete_url=$this->createUrl('/admin/article/delete',array('aid'=>$aid));
-				$update_url=$this->createUrl('/admin/article/update',array('aid'=>$aid));
+				$column_id=$article->column_id;
+				$catalog=Catalog::model()->findByPk($column_id);
+				$article_id=$article->article_id;
+				$url=$this->createUrl('/article/view',array('article_id'=>$article_id));
+				$delete_url=$this->createUrl('/admin/article/delete',array('column_id'=>$column_id,'article_id'=>$article_id));
+				$update_url=$this->createUrl('/admin/article/update',array('column_id'=>$column_id, 'article_id'=>$article_id));
 				$date=substr($article->date, 0, 10);
 				echo <<<EOD
 					<tr>
-						<td>$aid</td>
+						<td>$article_id</td>
 						<td>$catalog[title]</td>
 						<td><a href="$url">$article[title]</a></td>
 						<td>$article[despic]</td>

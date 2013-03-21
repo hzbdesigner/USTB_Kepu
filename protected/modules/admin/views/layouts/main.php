@@ -29,12 +29,7 @@
 
 	<script src="<?php echo Yii::app()->baseUrl ; ?>/assets_admin/js/jquery-1.8.2.js"></script>
 
-	<script type="text/javascript">
-		window.UEDITOR_HOME_URL = '<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/';
-	</script>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/themes/default/ueditor.css" />
-	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/editor_config.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/editor_all_min.js"></script>
+	
 	<!-- end: CSS -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->

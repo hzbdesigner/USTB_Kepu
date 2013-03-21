@@ -1,4 +1,9 @@
-
+<script type="text/javascript">
+	window.UEDITOR_HOME_URL = '<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/';
+</script>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/themes/default/ueditor.css" />
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/editor_config.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/editor_all_min.js"></script>
 
 <div class="tab-pane " id="tab2">
 	<?php
@@ -43,10 +48,10 @@ EOD;
 				<div class="controls">
 					<?php
 					foreach($catalogs as $catalog){
-						
+						$catalog_id=$catalog->catalog_id;
 						echo <<<EOD
 						<label class="radio inline">
-							<input type="radio"  name="Article[catalog_id]" />
+							<input type="radio"  name="Article[catalog_id]" value="$catalog_id"/>
 							<span style="width:90px;">$catalog[title]</span>
 						</label>
 EOD;
@@ -79,7 +84,7 @@ EOD;
 					正文：
 				</label>
 				<div class="controls">
-					<div id="Article_content"></div>
+					<div id="article_content"></div>
 					<script type="text/plain" id="Article_textarea" name='Article[content]'></script>
 				</div>
 			</div>
@@ -101,10 +106,10 @@ $(function(){
 	var Ueditor = new baidu.editor.ui.Editor({
 		UEDITOR_HOME_URL:'<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/',
 		imagePath:"http://<?php echo $_SERVER['HTTP_HOST'].Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/php/",
-		initialContent:'请输入文章内容',
-		textarea:'Article[acontent]'
+		initialContent:'请输入文章内容，测试',
+		textarea:'Article[content]'
 	});
-	Ueditor.render('Article_content');
+	Ueditor.render('article_content');
 
 });
 </script>
