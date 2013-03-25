@@ -127,7 +127,7 @@ EOD;
 EOD;
 			} ?>
 
-
+			<div style="visible:hidden;" class="invisible"></div>
 			<!-- action -->			
 			<div class="control-group action">
 				<button class="btn btn-primary">保存</button>
@@ -135,12 +135,25 @@ EOD;
 			</div>
 
 
+
 		</fieldset>
 		
 	</form>
 </div>
+<script type="text/javascript">
+	
+$(function(){
+	var Ueditor = new baidu.editor.ui.Editor({
+		UEDITOR_HOME_URL:'<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/',
+		imagePath:"http://<?php echo $_SERVER['HTTP_HOST'].Yii::app()->baseUrl; ?>a/ssets_admin/tool/ueditor/php/",
+		initialContent:'请输入文章内容',
+		textarea:'Article[content]'
+	});
 
-
-
+	Ueditor.render(
+		<?php if($template['ifcontent']){echo 'article_content';}else{echo 'invisible';}?>
+	);
+});
+</script>
 
 
