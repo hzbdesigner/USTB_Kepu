@@ -18,7 +18,7 @@
 	?>
 	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/update',array('column_id'=>$column_id,'article_id'=>$article_id, 'catalog_id'=>$catalog_id));?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
-			<legend>修改文章</legend>
+			<legend>修改——<span><?php echo $catalog->title; ?><span></legend>
 			<div class="control-group">
 				<label class="control-label">栏目</label>
 				<div class="controls">

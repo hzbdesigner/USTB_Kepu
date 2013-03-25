@@ -229,11 +229,11 @@ class ArticleController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($column_id,$article_id)
+	public function actionDelete( $column_id , $article_id)
 	{	
-		echo '3333';
-		// $this->loadModel($article_id)->delete();
-		// $this->redirect(array('admin','column_id'=>$column_id,'catalog_id'=>"all"));
+		echo 2;
+		$this->loadModel($article_id)->delete();
+		$this->redirect(array('admin','column_id'=>$column_id,'catalog_id'=>"all"));
 	}
 
 

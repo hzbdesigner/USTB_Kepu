@@ -17,7 +17,7 @@
 	?>
 	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/create',array('column_id'=>$column_id,'catalog_id'=>$catalog_id));?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
-			<legend>新建文章</legend>
+			<legend>新建——<span><?php echo $catalog->title; ?><span></legend>
 			<div class="control-group">
 				<label class="control-label">栏目</label>
 				<div class="controls">
@@ -42,6 +42,7 @@ EOD;
 					<label class="control-label">分类</label>
 					<div class="controls">
 						<?php
+							$catalog=Catalog::model()->findByPk($catalog_id);
 							echo <<<EOD
 							<label class="radio inline">
 								<input type="radio"  name="Article[catalog_id]" value="$catalog_id" checked="checked"/>
