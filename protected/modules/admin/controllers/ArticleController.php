@@ -95,18 +95,27 @@ class ArticleController extends Controller
 						
 			$model=new Article;
 			$model->attributes=$_POST['Article'];
+
 			// echo $model->title;
 			// echo $model->catalog_id;
 			// echo $model->column_id;
 			// echo $model->content;
-			if($model->save()){
-				$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
-				//尼玛，redirect和createUrl不一样
-			}else{
-				$msg = '保存失败！'; //如果没有保存到数据库的话
-				$error = '请正确填写文章标题、分类、正文~！';
+			if($_POST['Article']['content']){echo "post content is true" ;}else{echo "post content is false";}
+			echo $_POST['Article']['content'];
+			if($model){echo "model is true" ;}else{echo "model is false";}
+			echo $model->title ;
+			echo $model->author;
+			echo $model->content; //问题出现：post的content的属性没有赋值给model的content属性
+			if($model->content){echo "content is true" ;}else{echo "content is false";}
+			// if($model->save()){
+			// 	echo $model->content;
+			// 	$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
+			// 	//尼玛，redirect和createUrl不一样
+			// }else{
+			// 	$msg = '保存失败！'; //如果没有保存到数据库的话
+			// 	$error = '请正确填写文章标题、分类、正文~！';
 
-			}
+			// }
 			
 		}
 		

@@ -116,7 +116,7 @@ EOD;
 			<?php if($template['ifcontent']){
 			echo <<<EOD
 			<div class="control-group">
-				<label class="control-label" for="inputEmail">
+				<label class="control-label">
 					正文：
 				</label>
 				<div class="controls">

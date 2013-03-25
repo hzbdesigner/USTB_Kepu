@@ -11,14 +11,16 @@
 			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$error</div>";
 			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$msg</div>";
 		}
-		
+		$catalog=Catalog::model()->findByPk($catalog_id);
+		$template=$catalog->tm;
 
 	?>
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/update',array('column_id'=>$column_id,'article_id'=>$article_id));?>" method='POST' enctype="multipart/form-data" >
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/update',array('column_id'=>$column_id,'article_id'=>$article_id, 'catalog_id'=>$catalog_id));?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
 			<legend>修改文章</legend>
 			<div class="control-group">
 				<label class="control-label">栏目</label>
+				<div class="controls">
 				<?php
 					foreach($catalogs as $catalog){
 						$column=$catalog->column;
@@ -34,51 +36,93 @@
 EOD;
 					
 					?>
-			</div>
-
-		
-
-			<div class="control-group">
-				<label class="control-label">分类</label>
-				<div class="controls">
-					<?php
-						echo <<<EOD
-						<label class="radio inline">
-							<input type="radio"  name="Article[catalog_id]" value="$catalog_id" checked="checked"/>
-							<span style="width:90px;">$catalog[title]</span>
-						</label>
-EOD;
-					
-					?>
 				</div>
 			</div>
 				<div class="control-group">
-				<label class="control-label">标题</label>
-				<div class="controls">
-					<input class="span6" type="text" name='Article[title]' placeholder="输入文章标题" value='<?php echo $model->title ;?>'/>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label">发布部门</label>
-				<div class="controls">
-					<input class="span2" type="text" name='Article[author]' placeholder="输入发布部门" value='<?php echo $model->author ;?>'/>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label">简述</label>
-				<div class="controls">
-					<textarea rows="3" class="span5" name='Article[des]' ><?php echo $model->des ;?></textarea>
-				</div>
-			</div>
-			
-			<div class="control-group">
-				<label class="control-label">图片</label>
-				<div class="controls">
-					<img src="<?php echo $model->despic; ?>" />
-					<input type="file"  name="despic"/>
+					<label class="control-label">分类</label>
+					<div class="controls">
+						<?php
+							echo <<<EOD
+							<label class="radio inline">
+								<input type="radio"  name="Article[catalog_id]" value="$catalog_id" checked="checked"/>
+								<span style="width:90px;">$catalog[title]</span>
+							</label>
+EOD;
+						
+						?>
 				</div>
 			</div>
 
+
+			<!-- 各种属性 -->
+			<!-- title -->
+			<?php if($template['iftitle']){
+				$title=$model->title;
+				echo <<<EOD
+				<div class="control-group">
+					<label class="control-label">标题</label>
+					<div class="controls">
+						<input class="span6" type="text" name='Article[title]' placeholder="输入文章标题" value='$title'/>
+					</div>
+				</div>
+EOD;
+			} ?>
+			<!-- des -->
+			<?php if($template['ifdes']){
+				$des=$model->des;
+			echo <<<EOD
+			<div class="control-group">
+				<label class="control-label">简述</label>
+				<div class="controls">
+					<textarea rows="3" class="span5" name='Article[des]' value="$des"></textarea>
+				</div>
+			</div>
+EOD;
+			} ?>
+			<!-- despic -->
+			<?php if($template['ifdespic']){
+				$despic=$model->despic;
+			echo <<<EOD
+			<div class="control-group">
+				<label class="control-label">缩略图</label>
+				<div class="controls">
+				<img src="$despic" />
+					<input type="file"  name="despic"/>
+				</div>
+			</div>
+EOD;
+			} ?>
+			<!-- banner -->
+			<?php if($template['ifbanner']){
+				$banner=$model->dbanner;
+			echo <<<EOD
+			<div class="control-group">
+				<label class="control-label">焦点图</label>
+				<div class="controls">
+					<img src="$banner" />
+					<input type="file"  name="banner"/>
+				</div>
+			</div>
+EOD;
+
+			} ?>			
+			<!-- author -->
+			<?php if($template['ifauthor']){
+				$author=$model->author;
+			echo <<<EOD
+			<div class="control-group">
+				<label class="control-label">发布部门</label>
+				<div class="controls">
+					<input class="span2" type="text" name='Article[author]' placeholder="输入发布部门" value="$author"/>
+				</div>
+			</div>
+EOD;
+			} ?>			
+			<!-- data & read_num -->
+			<!-- content -->
+			<?php if($template['ifcontent']){
+				$content=$model->content;//content再下面的js中du
+			echo <<<EOD
 			<div class="control-group">
 				<label class="control-label" for="inputEmail">
 					正文：
@@ -88,29 +132,35 @@ EOD;
 					<script type="text/plain" id="Article_textarea" name='Article[content]'></script>
 				</div>
 			</div>
-			
+EOD;
+			} ?>
+
+			<div style="visible:hidden;" class="invisible"></div>
+			<!-- action -->			
 			<div class="control-group action">
 				<button class="btn btn-primary">保存</button>
 				<button class="btn ">取消</button>
 			</div>
 
 
+
 		</fieldset>
 		
 	</form>
 </div>
-
 <script type="text/javascript">
 	
 $(function(){
 	var Ueditor = new baidu.editor.ui.Editor({
 		UEDITOR_HOME_URL:'<?php echo Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/',
-		imagePath:"http://<?php echo $_SERVER['HTTP_HOST'].Yii::app()->baseUrl; ?>/assets_admin/tool/ueditor/php/",
-		initialContent:'<?php echo $model->content; ?>',
+		imagePath:"http://<?php echo $_SERVER['HTTP_HOST'].Yii::app()->baseUrl; ?>a/ssets_admin/tool/ueditor/php/",
+		initialContent:'<?php echo $model->content;?>',
 		textarea:'Article[content]'
 	});
-	Ueditor.render('article_content');
 
+	Ueditor.render(
+		<?php if($template['ifcontent']){echo 'article_content';}else{echo 'invisible';}?>
+	);
 });
 </script>
 
