@@ -144,7 +144,7 @@ class ArticleController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($column_id,$article_id)
+	public function actionUpdate($column_id,$article_id,$catalog_id)
 	{
 		$msg = '';
 		$error = '';
@@ -195,9 +195,11 @@ class ArticleController extends Controller
 		$criteria_ca->addCondition("column_id='$column_id'");
 		$catalogs = Catalog::model()->findAll($criteria_ca);
 
+		
 		//页面渲染
 		$sub_content=$this->renderPartial('update',array(
 			'catalogs'=>$catalogs,
+			'catalog_id'=>$catalog_id,
 			'column_id'=>$column_id,
 			'article_id'=>$article_id,
 			'model'=>$model,
@@ -205,7 +207,7 @@ class ArticleController extends Controller
 			'msg'=>$msg,
 		),true);
 		
-		$this->render('index',array('sub_content'=>$sub_content,'column_id'=>$column_id,'catalogs'=>$catalogs));
+		$this->render('index',array('sub_content'=>$sub_content,'column_id'=>$column_id,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id));
 		
 	}
 

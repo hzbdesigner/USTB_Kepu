@@ -36,38 +36,26 @@ EOD;
 					?>
 			</div>
 
-			<div class="control-group">
-				<label class="control-label">标题</label>
-				<div class="controls">
-					<input class="span6" type="text" name='Article[title]' placeholder="输入文章标题" value='<?php echo $model->title ;?>'/>
-				</div>
-			</div>
+		
 
 			<div class="control-group">
 				<label class="control-label">分类</label>
 				<div class="controls">
 					<?php
-					foreach($catalogs as $catalog){
-						$catalog_id=$catalog->catalog_id;
-						// echo $model->catalog_id;
-						// echo $catalog_id;
-						if($catalog_id==$model->catalog_id){ 
 						echo <<<EOD
 						<label class="radio inline">
 							<input type="radio"  name="Article[catalog_id]" value="$catalog_id" checked="checked"/>
 							<span style="width:90px;">$catalog[title]</span>
 						</label>
 EOD;
-						}else{
-							echo <<<EOD
-						<label class="radio inline">
-							<input type="radio"  name="Article[catalog_id]" value="$catalog_id" />
-							<span style="width:90px;">$catalog[title]</span>
-						</label>
-EOD;
-						}
-					}
+					
 					?>
+				</div>
+			</div>
+				<div class="control-group">
+				<label class="control-label">标题</label>
+				<div class="controls">
+					<input class="span6" type="text" name='Article[title]' placeholder="输入文章标题" value='<?php echo $model->title ;?>'/>
 				</div>
 			</div>
 			<div class="control-group">
