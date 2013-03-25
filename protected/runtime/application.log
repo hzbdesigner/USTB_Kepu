@@ -3092,3 +3092,33 @@ in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
 2013/03/25 13:02:20 [warning] [application] Failed to set unsafe attribute "content" of "Article".
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:03:12 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:04:35 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:04:38 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:05:23 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:08:11 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:14:05 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:15:24 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:16:21 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (97)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:16:44 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (190)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:19:11 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (190)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)

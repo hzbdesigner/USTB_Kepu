@@ -113,8 +113,7 @@ EOD;
 			} ?>			
 			<!-- data & read_num -->
 			<!-- content -->
-			<?php if($template['ifcontent']){
-			echo <<<EOD
+
 			<div class="control-group">
 				<label class="control-label">
 					正文：
@@ -124,8 +123,6 @@ EOD;
 					<script type="text/plain" id="Article_textarea" name='Article[content]'></script>
 				</div>
 			</div>
-EOD;
-			} ?>
 
 			<div style="visible:hidden;" class="invisible"></div>
 			<!-- action -->			
@@ -150,9 +147,7 @@ $(function(){
 		textarea:'Article[content]'
 	});
 
-	Ueditor.render(
-		<?php if($template['ifcontent']){echo 'article_content';}else{echo 'invisible';}?>
-	);
+	Ueditor.render('article_content');
 });
 </script>
 

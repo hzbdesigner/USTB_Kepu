@@ -13,6 +13,7 @@
 		}
 		$catalog=Catalog::model()->findByPk($catalog_id);
 		$template=$catalog->tm;
+		$content=$model->content;
 
 	?>
 	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/Article/update',array('column_id'=>$column_id,'article_id'=>$article_id, 'catalog_id'=>$catalog_id));?>" method='POST' enctype="multipart/form-data" >
@@ -121,7 +122,7 @@ EOD;
 			<!-- data & read_num -->
 			<!-- content -->
 			<?php if($template['ifcontent']){
-				$content=$model->content;//content再下面的js中du
+				//$content=$model->content;//content再下面的jszhong
 			echo <<<EOD
 			<div class="control-group">
 				<label class="control-label" for="inputEmail">
