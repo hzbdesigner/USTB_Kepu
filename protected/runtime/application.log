@@ -3122,3 +3122,238 @@ in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
 2013/03/25 14:19:11 [warning] [application] Failed to set unsafe attribute "content" of "Article".
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (190)
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:22:16 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (190)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 14:22:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:26:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:26:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+---
+2013/03/25 14:27:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+---
+2013/03/25 14:27:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:27:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:27:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:28:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:28:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31/catalog_id/zhanpin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:28:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/37/catalog_id/zhanpin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:30:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:30:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/25 14:30:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:1119
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---

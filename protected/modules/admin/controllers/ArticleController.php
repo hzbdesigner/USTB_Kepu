@@ -188,6 +188,8 @@ class ArticleController extends Controller
 			}
 
 			$model->attributes=$_POST['Article'];
+			$content=$_POST['Article']['content'];
+			$model->content=$content;
 			if($model->save()){
 				$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
 				//尼玛，redirect和createUrl不一样
@@ -228,13 +230,10 @@ class ArticleController extends Controller
 	 * @param integer $id the ID of the model to be deleted
 	 */
 	public function actionDelete($column_id,$article_id)
-	{
-		$this->loadModel($article_id)->delete();
-		$this->redirect(array('admin','column_id'=>$column_id,'catalog_id'=>"all"));
-
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	{	
+		echo '3333';
+		// $this->loadModel($article_id)->delete();
+		// $this->redirect(array('admin','column_id'=>$column_id,'catalog_id'=>"all"));
 	}
 
 
