@@ -1,21 +1,10 @@
 
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" style="<?php if($catalog_id=='all'){echo 'display:none;';} ?>">
 
+	<li class="<?php if( $this->action->id=='admin'){ echo 'active';} ?>"> <a href="<?php echo $this->createUrl('/admin/article/admin',array('column_id'=>$column_id,'catalog_id'=>$catalog_id)) ; ?>" >文章管理</a> </li>
+	<li class="<?php if( $this->action->id=='create'){ echo 'active';} ?>"> <a href="<?php echo $this->createUrl('/admin/article/create',array('column_id'=>$column_id,'catalog_id'=>$catalog_id)) ; ?>"  >添加文章</a> </li>
 
-    <li class="<?php if($catalog_id == "all"){echo 'active';} ?>"><a href="<?php echo $this->createUrl('admin',array('column_id'=>$column_id,'catalog_id'=>"all")); ?>" >全部</a></li>
-    <?php 
-    foreach ($catalogs as $catalog) {
-    	$title=$catalog->title;
-    	$catalogid=$catalog->catalog_id;
-    	$url=$this->createUrl('admin',array('column_id'=>$column_id,'catalog_id'=>$catalogid));
-    	if($catalogid==$catalog_id){$active="active";}else{$active="";}
-    	echo <<<EOD
-    	<li class='$active'><a href='$url' >$title</a></li>
-EOD;
-    }
-    
-    ?>
 </ul>
 <div class="tab-content">
 	<div class="tab-pane active" id="tab1">

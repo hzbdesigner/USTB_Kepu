@@ -14,10 +14,11 @@
  * @property string $column_id
  * @property string $content
  * @property string $des
+ * @property string $banner
  *
  * The followings are the available model relations:
- * @property Column $column
  * @property Catalog $catalog
+ * @property Column $column
  */
 class Article extends CActiveRecord
 {
@@ -47,13 +48,13 @@ class Article extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('catalog_id, title, column_id, content', 'required'), //despic, date, read_num,author,  des，content
+			// array('catalog_id, title, despic, date, author, column_id, content, des, banner', 'required'),
 			array('read_num', 'numerical', 'integerOnly'=>true),
-			array('catalog_id, title, despic, author, column_id', 'length', 'max'=>255),
+			array('catalog_id, title, despic, author, column_id, banner', 'length', 'max'=>255),
 			array('des', 'length', 'max'=>1024),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('article_id, catalog_id, title, despic, date, read_num, author, column_id, content, des', 'safe', 'on'=>'search'),
+			array('article_id, catalog_id, title, despic, date, read_num, author, column_id, content, des, banner', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,8 +66,8 @@ class Article extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'column' => array(self::BELONGS_TO, 'Column', 'column_id'),
 			'catalog' => array(self::BELONGS_TO, 'Catalog', 'catalog_id'),
+			'column' => array(self::BELONGS_TO, 'Column', 'column_id'),
 		);
 	}
 
@@ -86,6 +87,7 @@ class Article extends CActiveRecord
 			'column_id' => 'Column',
 			'content' => 'Content',
 			'des' => 'Des',
+			'banner' => 'Banner',
 		);
 	}
 
@@ -110,6 +112,7 @@ class Article extends CActiveRecord
 		$criteria->compare('column_id',$this->column_id,true);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('des',$this->des,true);
+		$criteria->compare('banner',$this->banner,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

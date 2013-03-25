@@ -61,7 +61,7 @@ class ArticleController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate($column_id)
+	public function actionCreate($column_id,$catalog_id)
 	{
 		$msg = '';
 		$error = '';
@@ -112,19 +112,17 @@ class ArticleController extends Controller
 		
 		//假如进入该页面，而不是在本页面提交
 
-		//catalog数据获取
+		//catalog数据
 		$criteria_ca = new CDbCriteria;
 		$criteria_ca->order='catalog_id DESC';	
 		$criteria_ca->addCondition("column_id='$column_id'");
 		$catalogs = Catalog::model()->findAll($criteria_ca);
 
-		
-
-
 		//页面渲染
 		$sub_content=$this->renderPartial('create',array(
 			'catalogs'=>$catalogs,
 			'column_id'=>$column_id,
+			'catalog_id'=>$catalog_id,
 			'error'=>$error,
 			'msg'=>$msg,
 		),true);
@@ -132,7 +130,12 @@ class ArticleController extends Controller
 		// $criteria_cl->addCondition("column_id='$column_id'");
 		// $column = Column::model()->findAll($criteria_cl);
 		
-		$this->render('index',array('sub_content'=>$sub_content,'column_id'=>$column_id));
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			'column_id'=>$column_id,
+			'catalogs'=>$catalogs,
+			'catalog_id'=>$catalog_id,
+		));
 		
 	}
 
@@ -202,7 +205,7 @@ class ArticleController extends Controller
 			'msg'=>$msg,
 		),true);
 		
-		$this->render('index',array('sub_content'=>$sub_content,'column_id'=>$column_id));
+		$this->render('index',array('sub_content'=>$sub_content,'column_id'=>$column_id,'catalogs'=>$catalogs));
 		
 	}
 
@@ -277,7 +280,8 @@ class ArticleController extends Controller
 			'sub_content'=>$sub_content,
 			//传进来的参数
 			'column_id'=>$column_id,
-			'catalog_id'=>$catalog_id,	
+			'catalog_id'=>$catalog_id,
+			'catalogs'=>$catalogs,
 			
 		));
 

@@ -1,26 +1,28 @@
 <?php
 
 /**
- * This is the model class for table "{{catalog}}".
+ * This is the model class for table "{{template}}".
  *
- * The followings are the available columns in table '{{catalog}}':
- * @property string $catalog_id
- * @property string $title
- * @property string $column_id
- * @property integer $order_id
+ * The followings are the available columns in table '{{template}}':
  * @property string $tmid
+ * @property integer $iftitle
+ * @property integer $ifdes
+ * @property integer $ifdespic
+ * @property integer $ifcontent
+ * @property integer $ifauthor
+ * @property integer $ifdate
+ * @property integer $ifread_num
+ * @property integer $ifbanner
  *
  * The followings are the available model relations:
- * @property Article[] $articles
- * @property Template $tm
- * @property Column $column
+ * @property Catalog[] $catalogs
  */
-class Catalog extends CActiveRecord
+class Template extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Catalog the static model class
+	 * @return Template the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -32,7 +34,7 @@ class Catalog extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{catalog}}';
+		return '{{template}}';
 	}
 
 	/**
@@ -43,12 +45,12 @@ class Catalog extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('catalog_id, title, column_id, order_id, tmid', 'required'),
-			array('order_id', 'numerical', 'integerOnly'=>true),
-			array('catalog_id, title, column_id, tmid', 'length', 'max'=>255),
+			array('tmid', 'required'),
+			array('iftitle, ifdes, ifdespic, ifcontent, ifauthor, ifdate, ifread_num, ifbanner', 'numerical', 'integerOnly'=>true),
+			array('tmid', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('catalog_id, title, column_id, order_id, tmid', 'safe', 'on'=>'search'),
+			array('tmid, iftitle, ifdes, ifdespic, ifcontent, ifauthor, ifdate, ifread_num, ifbanner', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,9 +62,7 @@ class Catalog extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'articles' => array(self::HAS_MANY, 'Article', 'catalog_id'),
-			'tm' => array(self::BELONGS_TO, 'Template', 'tmid'),
-			'column' => array(self::BELONGS_TO, 'Column', 'column_id'),
+			'catalogs' => array(self::HAS_MANY, 'Catalog', 'tmid'),
 		);
 	}
 
@@ -72,11 +72,15 @@ class Catalog extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'catalog_id' => 'Catalog',
-			'title' => 'Title',
-			'column_id' => 'Column',
-			'order_id' => 'Order',
 			'tmid' => 'Tmid',
+			'iftitle' => 'Iftitle',
+			'ifdes' => 'Ifdes',
+			'ifdespic' => 'Ifdespic',
+			'ifcontent' => 'Ifcontent',
+			'ifauthor' => 'Ifauthor',
+			'ifdate' => 'Ifdate',
+			'ifread_num' => 'Ifread Num',
+			'ifbanner' => 'Ifbanner',
 		);
 	}
 
@@ -91,11 +95,15 @@ class Catalog extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('catalog_id',$this->catalog_id,true);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('column_id',$this->column_id,true);
-		$criteria->compare('order_id',$this->order_id);
 		$criteria->compare('tmid',$this->tmid,true);
+		$criteria->compare('iftitle',$this->iftitle);
+		$criteria->compare('ifdes',$this->ifdes);
+		$criteria->compare('ifdespic',$this->ifdespic);
+		$criteria->compare('ifcontent',$this->ifcontent);
+		$criteria->compare('ifauthor',$this->ifauthor);
+		$criteria->compare('ifdate',$this->ifdate);
+		$criteria->compare('ifread_num',$this->ifread_num);
+		$criteria->compare('ifbanner',$this->ifbanner);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
