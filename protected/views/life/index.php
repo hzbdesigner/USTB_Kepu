@@ -23,16 +23,20 @@
 		<div class="container">
 
 			<div id="filters">
-				<ul class="option-set" data-option-key="filter">
-					
-					<li><a href="#filter" class="selected" data-option-value="*">全部</a></li>
-					<li><a href="#filter" class="" data-option-value="*">冶金铸造文明</a></li>
-					<li><a href="#filter" data-option-value=".nature">材料创造传奇</a></li>
-					<li><a href="#filter" data-option-value=".people">机电改变生活</a></li>
-					<li><a href="#filter" data-option-value=".scenery">科技人物谱</a></li>
-					<li><a href="#filter" data-option-value=".world">建筑改变城市</a></li>
-					<li><a href="#filter" data-option-value=".world">生物科技改善环境</a></li>
-					<li><a href="#filter" data-option-value=".world">大自然的馈赠</a></li>
+				<ul class="option-set" >
+					<li><a href="<?php echo $this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>'all')) ; ?>" class="<?php if($catalog_id=='all'){echo "selected";} ?>">全部</a></li>
+					<?php 
+
+						foreach ($catalogs as $catalog) {
+							$title=$catalog->title;
+							$the_catalog_id=$catalog->catalog_id;
+							if($the_catalog_id==$catalog_id){$selected="selected";}else{$selected=" ";}
+							$url=$this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>$the_catalog_id));
+							echo <<<EOD
+							<li><a href="$url"  class="$selected">$title</a></li>
+EOD;
+						}
+					?>
 				</ul>
 			</div>
 
@@ -44,79 +48,31 @@
 	
 			<!-- start: Portfolio -->
 			<div id="portfolio-wrapper" class="row">
-								
-				<div class="span3 portfolio-item nature people">
-					<div class="picture"><a href="project.html" title="Title"><img src="<?php echo Yii::app()->baseUrl; ?>/img/photo1.jpg" alt=""/><div class="image-overlay-link"></div></a>
+				
+			<?php 
+
+				foreach ($models as $model) {
+					$title=$model->title;
+					$img=$model->despic;
+					$des=$model->des;
+					$date=substr($model->date, 0, 10);
+					$author=$model->author;
+					$read_num=$model->read_num;
+					// $the_catalog_id=$model->catalog_id;
+					//$url=$this->createUrl('view',array('column_id'=>$column_id,'catalog_id'=>$the_catalog_id));
+					echo <<<EOD
+				<div class="span3 portfolio-item">
+					<div class="picture"><a href="#" title="Title"><img src="$img"></div></a>
 						<div class="item-description alt">
-							<h5><a href="project.html">名称名称名称</a></h5>
-							<p>
-								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
-							</p>
+							<h5><a href="project.html">$title</a></h5>
+							<p>$des</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>$date</span> <span><i class="mini-ico-user"></i> <a href="#">$author</a></span> <span><i class="mini-ico-comment"></i><a href="#">$read_num</a></span></div>
 					</div>	
 				</div>
-
-				<div class="span3 portfolio-item scenery">
-					<div class="picture">
-						<a href="project.html" title="Title"><img src="<?php echo Yii::app()->baseUrl; ?>/img/photo3.jpg" alt=""/><div class="image-overlay-link"></div></a>
-							<div class="item-description alt">
-								<h5><a href="project.html">名称名称名称</a></h5>
-								<p>
-									内容描述内容描述
-							</p>
-						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
-					</div>
-				</div>
-
-				<div class="span3 portfolio-item world scenery">
-					<div class="picture"><a href="project.html" title="Title"><img src="<?php echo Yii::app()->baseUrl; ?>/img/photo5.jpg" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="project.html">名称名称名称</a></h5>
-							<p>
-							内容描述内容描述
-							</p>
-						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
-					</div>
-				</div>
-
-				<div class="span3 portfolio-item nature scenery">
-					<div class="picture"><a href="project.html" title="Title"><img src="<?php echo Yii::app()->baseUrl; ?>/img/photo6.jpg" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="project.html">名称名称名称名称名称名称</a></h5>
-							<p>
-								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
-							</p>
-						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
-					</div>
-				</div>
-
-				<div class="span3 portfolio-item world">
-					<div class="picture"><a href="project.html" title="Title"><img src="<?php echo Yii::app()->baseUrl; ?>/img/photo4.jpg" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="project.html">名称名称名称名称名称名称</a></h5>
-							<p>
-								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
-							</p>
-						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
-					</div>
-				</div>
-
-				<div class="span3 portfolio-item world people">
-					<div class="picture"><a href="project.html"><img src="<?php echo Yii::app()->baseUrl; ?>/img/photo8.jpg" alt=""/><div class="image-overlay-link"></div></a>
-						<div class="item-description alt">
-							<h5><a href="project.html">名称名称名称名称名称名称</a></h5>
-							<p>
-								内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述
-							</p>
-						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>2013.03.01</span> <span><i class="mini-ico-user"></i> <a href="#">张三</a></span> <span><i class="mini-ico-comment"></i><a href="#">89 </a></span></div>	
-					</div>
-				</div>
+EOD;
+				}
+			?>		
 
 			</div>
 			<!-- end: Portfolio -->

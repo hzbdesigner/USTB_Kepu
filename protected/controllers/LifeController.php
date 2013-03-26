@@ -3,6 +3,22 @@
 class LifeController extends Controller
 {	
 	public $layout='main';
+
+	public function actionIndex($column_id,$catalog_id)
+	{	
+		//article
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("column_id='$column_id'");
+		if($catalog_id !=="all"){
+			$criteria->addCondition("catalog_id='$catalog_id'");
+		}
+		$models=Article::model()->findAll($criteria);
+
+		//column&catalog
+		$column=Column::model()->findByPk($column_id);
+		$catalogs=$column->catalogs;
+		$this->render('index',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
+	}
 	public function actionYejin()
 	{
 		$this->render('yejin');
@@ -38,10 +54,7 @@ class LifeController extends Controller
 		$this->render('ziran');
 	}
 
-	public function actionIndex()
-	{
-		$this->render('index');
-	}
+	
 
 	// -----------------------------------------------------------
 	// Uncomment the following methods and override them if needed
