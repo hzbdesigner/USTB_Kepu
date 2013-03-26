@@ -6,7 +6,6 @@
 									<td>id</td>
 									<td>type</td>
 									<td>title</td>
-									<td>pic</td>
 									<td>管理</td>
 									
 								</tr>

@@ -67,7 +67,6 @@ class ArticleController extends Controller
 		$error = '';
 		if(isset($_POST['Article']))
 		{	
-			//属性这么多，怎么验证先后啊~~
 			//图片验证
 			if (!empty($_FILES)){ 
 				//尼玛，只要有这个控件，就能进来
@@ -97,19 +96,7 @@ class ArticleController extends Controller
 			$model->attributes=$_POST['Article'];
 			$content=$_POST['Article']['content'];
 			$model->content=$content;
-			// if(isset($model->content)){echo "content is set";}else{echo "content isn't set";}
-			// if($model->hasAttribute('content')){echo "attribute is set";}else{echo "attribute isn't set";}
-			// // echo $model->title;
-			// // echo $model->catalog_id;
-			// // echo $model->column_id;
-			// // echo $model->content;
-			// if($_POST['Article']['content']){echo "post content is true" ;}else{echo "post content is false";}
-			// echo $_POST['Article']['content'];
-			// if($model){echo "model is true" ;}else{echo "model is false";}
-			// echo $model->title ;
-			// echo $model->author;
-			// echo $model->content; //问题出现：post的content的属性没有赋值给model的content属性
-			// if($model->content){echo "content is true" ;}else{echo "content is false";}
+
 			if($model->save()){
 				$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
 

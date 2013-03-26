@@ -71,7 +71,7 @@ class UserController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->uid));
+				$this->redirect(array('admin'));
 		}
 		$sub_content=$this->renderPartial('create',array(
 			'users'=>$users,
@@ -87,9 +87,9 @@ class UserController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
+	public function actionUpdate($uid)
 	{
-		$model=$this->loadModel($id);
+		$model=$this->loadModel($uid);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -98,12 +98,18 @@ class UserController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->uid));
+				$this->redirect(array('admin'));
 		}
 
-		$this->render('update',array(
+		$sub_content=$this->renderPartial('update',array(
 			'model'=>$model,
-		));
+			'uid'=>$uid,
+			),true);
+		
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			));
+
 	}
 
 	/**
@@ -111,9 +117,9 @@ class UserController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	public function actionDelete($uid)
 	{
-		$this->loadModel($id)->delete();
+		$this->loadModel($uid)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
