@@ -2,12 +2,12 @@
 
 class UserController extends Controller
 {
+	public $layout='main';
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
-
+	
 	/**
 	 * @return array action filters
 	 */
@@ -15,7 +15,7 @@ class UserController extends Controller
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
+			// 'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -37,7 +37,7 @@ class UserController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -73,10 +73,13 @@ class UserController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->uid));
 		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		$sub_content=$this->renderPartial('create',array(
+			'users'=>$users,
+			),true);
+		
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			));
 	}
 
 	/**
@@ -133,18 +136,30 @@ class UserController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new User('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['User']))
-			$model->attributes=$_GET['User'];
+		// $model=new User('search');
+		// $model->unsetAttributes();  // clear any default values
+		// $model=User::model()->findByPk($id);
+		// if(isset($_GET['User']))
+		// 	$model->attributes=$_GET['User'];
 
-		$this->render('admin',array(
-			'model'=>$model,
-		));
+		// $this->render('admin',array(
+		// 	'model'=>$model,
+		// ));
+
+		//数据
+		$users = User::model()->findAll();
+		// 渲染
+		$sub_content=$this->renderPartial('admin',array(
+			'users'=>$users,
+			),true);
+		
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			));
 	}
 
 	/**
-	 * Returns the data model based on the primary key given in the GET variable.
+	 * Returns the data user based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer the ID of the model to be loaded
 	 */

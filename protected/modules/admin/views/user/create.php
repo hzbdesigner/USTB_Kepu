@@ -1,18 +1,35 @@
-<?php
-/* @var $this UserController */
-/* @var $model User */
 
-$this->breadcrumbs=array(
-	'Users'=>array('index'),
-	'Create',
-);
+<div class="tab-pane " id="tab2">
+	<?php
+		if( $error ){
+			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$error</div>";
+		}
+	?>
+	
 
-$this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Manage User', 'url'=>array('admin')),
-);
-?>
+	<div class="container">
+		<form class="bs-docs-example form-horizontal" action='<?php echo $this->createUrl('/admin/user/create') ?>' method='post'>
+			<fieldset>
+				<legend>管理员添加</legend>
+				<div class="control-group">
+					<span>用户名</span>
+					<input type="text"   placeholder="输入用户名" name='User[username]'/>
+				</div>
+				<div class="control-group">
+					<span>邮&nbsp;&nbsp;&nbsp;箱</span>
+					<input type="text"   placeholder="输入用户名" name='User[email]'/>
+				</div>
+				<div class="control-group">
+					<span>密&nbsp;&nbsp;&nbsp;码</span>
+					<input type="password"   placeholder="输入密码" name='User[password]'/>
+				</div>
+				<div class="control-group">
+					<button class="btn" >添&nbsp;&nbsp;加</button>
+				</div>
 
-<h1>Create User</h1>
-
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+			</fieldset>
+		</form>
+	</div>
+		
+	</form>
+</div>

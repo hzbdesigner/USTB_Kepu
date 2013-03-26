@@ -1,56 +1,59 @@
-<?php
-/* @var $this UserController */
-/* @var $model User */
-
-$this->breadcrumbs=array(
-	'Users'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Create User', 'url'=>array('create')),
-);
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$.fn.yiiGridView.update('user-grid', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
-?>
-
-<h1>Manage Users</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'user-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'uid',
-		'username',
-		'email',
-		'password',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+<div class="tab-pane active" id="tab1">
+						<p>统计：</p>
+						<table class="table table-striped table-condensed ">
+							<thead>
+								<tr>
+									<td>id</td>
+									<td>type</td>
+									<td>title</td>
+									<td>pic</td>
+									<td>管理</td>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<?php 
+								foreach ($users as $user) {
+									$uid=$user->uid;
+									$delete_url=$this->createUrl('/admin/user/delete',array('uid'=>$uid));
+									$update_url=$this->createUrl('/admin/user/update',array('uid'=>$uid));
+									echo <<<EOD
+										<tr>
+											<td>$uid</td>
+											<td>$user[username]</a></td>
+											<td>$user[email]</a></td>
+											<td> 
+											<a href="$delete_url">删除</a></a> 
+												<span class="divider">/</span> 
+												<a href="$update_url">修改</a> 
+											</td>
+										</tr>
+EOD;
+								}
+								?>
+								
+							</tbody>
+						</table>
+						<!-- <div class="pagination ">
+							<ul>
+								<li><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</div> -->
+						<?php  
+							// $this->widget('CLinkPager',array(
+							// 'pages'=>$pages,
+							// 'firstPageLabel' => '首页',
+							// 'lastPageLabel' => '末页',
+							// 'nextPageLabel' => '下一页',
+							// 'prevPageLabel' => '上一页',
+							// 'header' => '',
+							// 'footer' => '',
+							// )); 
+						?>
+					</div>

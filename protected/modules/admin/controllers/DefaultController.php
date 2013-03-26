@@ -3,28 +3,28 @@
 class DefaultController extends Controller
 {
 	public $layout='main';
-	// public function filters()
-	// {
-	// 	return array(
-	// 		'accessControl', // perform access control for CRUD operations
-	// 	);
-	// }
-	// public function accessRules()
-	// {
-	// 	return array(
-	// 		array('allow',
-	// 			'actions'=>array( 'index', 'login'),
-	// 			'users'=>array('*'),
-	// 		),
-	// 		array('allow',
-	// 			'actions'=>array('logout'),
-	// 			'users'=>array('@'),
-	// 		),
-	// 		array('deny',  // deny all users
-	// 			'users'=>array('*'),
-	// 		),
-	// 	);
-	// }
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+		);
+	}
+	public function accessRules()
+	{
+		return array(
+			array('allow',
+				'actions'=>array( 'index', 'login'),
+				'users'=>array('*'),
+			),
+			array('allow',
+				'actions'=>array('logout'),
+				'users'=>array('@'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
 
 	// public function actionIndex()
 	// {
