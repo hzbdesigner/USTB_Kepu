@@ -148,7 +148,9 @@ $(function(){
 		textarea:'Article[content]'
 	});
 
-	Ueditor.render('article_content');
+	Ueditor.render(
+		<?php if($template['ifcontent']){echo 'article_content';}else{echo 'invisible';}?>
+	);
 });
 </script>
 

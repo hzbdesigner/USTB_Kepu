@@ -16,7 +16,7 @@ class ArticleController extends Controller
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
+			// 'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -231,7 +231,6 @@ class ArticleController extends Controller
 	 */
 	public function actionDelete( $column_id , $article_id)
 	{	
-		echo 2;
 		$this->loadModel($article_id)->delete();
 		$this->redirect(array('admin','column_id'=>$column_id,'catalog_id'=>"all"));
 	}

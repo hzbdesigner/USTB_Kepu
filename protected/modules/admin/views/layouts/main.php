@@ -71,8 +71,6 @@
 EOD;
 				    		}
 				    	?>
-				      <li><a href="#">页面</a></li>
-				      <li><a href="#">管理员</a></li>
 				      <li><a href="<?php echo $this->createUrl('/admin/default/logout'); ?>">退出</a></li>
 				    </ul>
 			    </div>

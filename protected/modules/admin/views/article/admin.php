@@ -14,11 +14,10 @@
 	<table class="table table-striped table-condensed ">
 		<thead>
 			<tr>
-				<td>id</td>
-				<td>type</td>
-				<td>title</td>
-				<td>pic</td>
-				<td>date</td>
+				<td>分类</td>
+				<td>标题</td>
+				<td>des</td>
+				<td>发布时间</td>
 				<td>管理</td>
 				
 			</tr>
@@ -30,16 +29,16 @@
 				$catalog=Catalog::model()->findByPk($column_id);
 				$article_id=$article->article_id;
 				$his_catalog_id=$article->catalog->catalog_id;
+				$his_catalog_title=$article->catalog->title;
 				$url=$this->createUrl('/article/view',array('article_id'=>$article_id));
 				$delete_url=$this->createUrl('/admin/article/delete',array('column_id'=>$column_id,'article_id'=>$article_id));
 				$update_url=$this->createUrl('/admin/article/update',array('column_id'=>$column_id, 'article_id'=>$article_id,'catalog_id'=>$his_catalog_id));
 				$date=substr($article->date, 0, 10);
 				echo <<<EOD
 					<tr>
-						<td>$article_id</td>
-						<td>$catalog[title]</td>
+						<td>$his_catalog_title</td>
 						<td><a href="$url">$article[title]</a></td>
-						<td>$article[despic]</td>
+						<td>$article[des]</td>
 						
 						<td>$date</td>
 						<td>

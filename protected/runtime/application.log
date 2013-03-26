@@ -3468,3 +3468,67 @@ HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column
 2013/03/25 14:51:00 [warning] [application] Failed to set unsafe attribute "content" of "Article".
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (190)
 in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/25 15:28:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('update')
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/u...')
+#10 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/update/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/zhanpin
+---
+2013/03/26 01:42:01 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:234) (/Applications/MAMP/htdocs/hzb/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(236): ArticleController->redirect()
+#1 unknown(0): ArticleController->actionDelete()
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): ArticleController->runAction()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): ArticleController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): ArticleController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): ArticleController->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (236)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/26 01:42:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php:311
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php(234): ArticleController->loadModel('31')
+#1 [internal function]: ArticleController->actionDelete('work', '31')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('delete')
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/article/d...')
+#14 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/article/delete/column_id/work/article_id/31
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/all
+---
+2013/03/26 01:43:20 [warning] [application] Failed to set unsafe attribute "content" of "Article".
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/ArticleController.php (190)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
