@@ -38,12 +38,18 @@
 
 							<div class="title"><h3>科普作品</h3></div>
 							<ul class="links-list-alt">
-								<li><a href="<?php echo $this->createUrl('/work') ;?>">学生科技活动简介</a></li>
-								<li><a href="<?php echo $this->createUrl('/work/zhanpin') ;?>">科普展品类</a></li>
-								<li><a href="<?php echo $this->createUrl('/work/wenyi') ;?>">科普文艺类</a></li>
-								<li><a href="<?php echo $this->createUrl('/work/dongman') ;?>">科普动漫类</a></li>
-								<li><a href="<?php echo $this->createUrl('/work/wangluo') ;?>"> 科普网络及软件类</a></li>
-								<li><a href="<?php echo $this->createUrl('/work/baogao') ;?>">科普报告类</a></li>
+								<?php 
+
+								foreach ($catalogs as $catalog) {
+									$title=$catalog->title;
+									$the_catalog_id=$catalog->catalog_id;
+									if($the_catalog_id==$catalog_id){$selected="selected";}else{$selected=" ";}
+									$url=$this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>$the_catalog_id));
+									echo <<<EOD
+									<li><a href="$url"  class="$selected">$title</a></li>
+EOD;
+								}
+							?>
 							</ul>
 
 							<div class="title"><h3>科普开放日预约</h3></div>

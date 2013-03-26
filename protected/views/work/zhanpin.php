@@ -7,44 +7,32 @@
 			<tr>
 				<td>部门</td>
 				<td>作品标题</td>
-				<td>作者</td>
 				<td>日期</td>
 				<td>热度</td>
 				
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>【团委】</td>
-				<td><a href="<?php echo $this->createUrl('/work/view')  ; ?>">第五届全国XX杯节能减排大赛一等奖作品《作品名称作品名称》</a></td>
-				<td>张三李四</td>
-				<td>2013年10月</td>
-				<td>浏览（100）</td>
-			</tr>
+			<?php 
 
-			<tr>
-				<td>【团委】</td>
-				<td><a href="#">第五届全国XX杯节能减排大赛一等奖作品《作品名称作品名称》</a></td>
-				<td>张三李四</td>
-				<td>2013年10月</td>
-				<td>浏览（100）</td>
-			</tr>
-
-			<tr>
-				<td>【团委】</td>
-				<td><a href="#">第五届全国XX杯节能减排大赛一等奖作品《作品名称作品名称》</a></td>
-				<td>张三李四</td>
-				<td>2013年10月</td>
-				<td>浏览（100）</td>
-			</tr>
-
-			<tr>
-				<td>【团委】</td>
-				<td><a href="#">第五届全国XX杯节能减排大赛一等奖作品《作品名称作品名称》</a></td>
-				<td>张三李四</td>
-				<td>2013年10月</td>
-				<td>浏览（100）</td>
-			</tr>
+				foreach ($models as $model) {
+					$title=$model->title;
+					$date=substr($model->date, 0, 10);
+					$author=$model->author;
+					$read_num=$model->read_num;
+					// $the_catalog_id=$model->catalog_id;
+					$url=$this->createUrl('view',array('column_id'=>$column_id,'catalog_id'=>$the_catalog_id));
+					echo <<<EOD
+				<tr>
+					<td>【<span>$author</span>】</td>
+					<td><a href="#">$title</a></td>
+					<td>$date</td>
+					<td>浏览（<span>$read_num</span>）</td>
+				</tr>
+EOD;
+				}
+			?>		
+			
 			
 		</tbody>
 	</table>

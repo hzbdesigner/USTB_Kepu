@@ -3,9 +3,14 @@
 class StrengthController extends Controller
 {
 	public $layout='main';
-	public function actionIndex()
-	{
-		$this->render('index');
+	public function actionIndex($column_id)
+	{	
+		//article
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("column_id='$column_id'");
+		$models=Article::model()->findAll($criteria);
+		$catalogs=$column->catalogs;
+		$this->render('index',array('models'=>$models));
 	}
 
 	// -----------------------------------------------------------

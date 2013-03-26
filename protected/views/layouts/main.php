@@ -69,11 +69,11 @@
 	              				<a href="<?php echo $this->createUrl('/school/index') ; ?>" class="dropdown-toggle" data-toggle="">北京科技大学</a>
 	              			</li>
 							<li class="dropdown <?php if ($this->id=='strength') {echo 'active';} ?>">
-	                			<a href="<?php echo $this->createUrl('/strength/index') ; ?>" class="dropdown-toggle" data-toggle="">优势学科</a>
+	                			<a href="<?php echo $this->createUrl('/strength/index',array('column_id'=>'strength') ) ; ?>" class="dropdown-toggle" data-toggle="">优势学科</a>
 	              			</li>
 							<li class="dropdown <?php if ($this->id=='life') {echo 'active';} ?>">
 	                			<a href="<?php echo $this->createUrl('/life/index', array('column_id'=>'life','catalog_id'=>'all')); ?>" class="dropdown-toggle" data-toggle="">科技生活<b class="caret"></b></a>
-	                			<ul class="dropdown-menu">
+	                			<!-- <ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/life/yejin') ; ?>">冶金铸就文明系列（红：热情）</a></li>
 									<li><a href="<?php echo $this->createUrl('/life/cailiao') ; ?>">材料创造传奇系列（紫：神秘）</a></li>
 									<li><a href="<?php echo $this->createUrl('/life/jidian') ; ?>">机电改变生活系列（橙：活泼）</a></li>
@@ -81,17 +81,17 @@
 									<li><a href="<?php echo $this->createUrl('/life/jianzhu') ; ?>">建筑改变城市（黄：高贵）</a></li>
 									<li><a href="<?php echo $this->createUrl('/life/shengwu') ; ?>">生物科技改善环境（绿：生命）</a></li>
 									<li><a href="<?php echo $this->createUrl('/life/ziran') ; ?>">大自然的馈赠（青：坚强）</a></li>
-	                			</ul>
+	                			</ul> -->
 	              			</li>									
-							<li class="dropdown <?php if ($this->id=='work') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/work') ; ?>" class="dropdown-toggle" data-toggle="">科普作品<b class="caret"></b></a>
-								<ul class="dropdown-menu">
+							<li class="dropdown <?php if ($this->id=='work') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/work/index', array('column_id'=>'work','catalog_id'=>'brief')) ; ?>" class="dropdown-toggle" data-toggle="">科普作品<b class="caret"></b></a>
+								<!-- <ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/work/brief') ; ?>">学生科技活动简介</a></li>
 									<li><a href="<?php echo $this->createUrl('/work/zhanpin') ; ?>">科普展品类</a></li>
 									<li><a href="<?php echo $this->createUrl('/work/wenyi') ; ?>">科普文艺类</a></li>
 									<li><a href="<?php echo $this->createUrl('/work/dongman') ; ?>">科普动漫类</a></li>
 									<li><a href="<?php echo $this->createUrl('/work/wangluo') ; ?>">科普网络及软件类</a></li>
 									<li><a href="<?php echo $this->createUrl('/work/baogao') ; ?>">科普报告类</a></li>
-	                			</ul>
+	                			</ul> -->
 							</li>
 							<li class="dropdown <?php if ($this->id=='activity') {echo 'active';} ?>">
 								<a href="<?php echo $this->createUrl('/activity') ; ?>" class="dropdown-toggle" data-toggle="">科普活动<b class="caret"></b></a>

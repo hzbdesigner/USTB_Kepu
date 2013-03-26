@@ -19,40 +19,7 @@ class LifeController extends Controller
 		$catalogs=$column->catalogs;
 		$this->render('index',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
 	}
-	public function actionYejin()
-	{
-		$this->render('yejin');
-	}
 
-	public function actionCailiao()
-	{
-		$this->render('cailiao');
-	}
-
-	public function actionJidian()
-	{
-		$this->render('jidian');
-	}
-
-	public function actionRenwu()
-	{
-		$this->render('renwu');
-	}
-
-	public function actionJianzhu()
-	{
-		$this->render('jianzhu');
-	}
-
-	public function actionShengwu()
-	{
-		$this->render('shengwu');
-	}
-
-	public function actionZiran()
-	{
-		$this->render('ziran');
-	}
 
 	
 

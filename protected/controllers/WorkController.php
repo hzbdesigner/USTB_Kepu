@@ -4,54 +4,23 @@ class WorkController extends Controller
 {	
 	public $layout='main';
 
-		public function actionIndex()
-	{
-		$sub_content = $this->renderPartial('/work/brief' ,array(),true);
-	    $this->render('index',array('sub_content' =>$sub_content));
-	}
-	public function actionBrief()
-	{   
-		$sub_content = $this->renderPartial('/work/brief' ,array(),true);
-	    $this->render('index',array('sub_content' =>$sub_content));
+	public function actionIndex($column_id,$catalog_id)
+	{	
+		//article
+		$criteria = new CDbCriteria;
+		$criteria->addCondition("column_id='$column_id'");
+		if($catalog_id !=="all"){
+			$criteria->addCondition("catalog_id='$catalog_id'");
+		}
+		$models=Article::model()->findAll($criteria);
 
+		//column&catalog
+		$column=Column::model()->findByPk($column_id);
+		$catalogs=$column->catalogs;
+		//$this->render('index',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
+		$sub_content = $this->renderPartial('/work/'.$catalog_id ,array('models'=>$models),true);
+	    $this->render('index',array('sub_content' =>$sub_content,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
 	}
-
-	public function actionZhanpin()
-	{
-		$sub_content = $this->renderPartial('/work/zhanpin' ,array(),true);
-	    $this->render('index',array('sub_content' =>$sub_content));
-	}
-
-	public function actionWenyi()
-	{
-		$sub_content = $this->renderPartial('/work/wenyi',array(),true);
-	    $this->render('index',array('sub_content' =>$sub_content));
-	}
-
-	public function actionDongman()
-	{
-		$sub_content = $this->renderPartial('/work/dongman' ,array(),true);
-	    $this->render('index',array('sub_content' =>$sub_content));
-	}
-
-	public function actionWangluo()
-	{
-		$sub_content = $this->renderPartial('/work/wangluo' ,array(),true);
-	    $this->render('index',array('sub_content' =>$sub_content));
-	}
-
-	public function actionBaogao()
-	{
-		$sub_content = $this->renderPartial('/work/baogao' ,array(),true);
-	    $this->render('index',array('sub_content' =>$sub_content));
-	}
-
-	public function actionView()
-	{
-		$sub_content = $this->renderPartial('/work/view' ,array(),true);
-	    $this->render('subindex',array('sub_content' =>$sub_content));
-	}
-
 
 
 	// -----------------------------------------------------------
