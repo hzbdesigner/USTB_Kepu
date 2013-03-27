@@ -5397,3 +5397,745 @@ Stack trace:
 REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
 HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
 ---
+2013/03/26 17:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sidebar.html".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('sidebar.html')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('sidebar.html')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('school/sidebar....')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/school/sidebar.html
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/school/index
+---
+2013/03/26 17:45:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('strength/index')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/strength/index
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/school/index
+---
+2013/03/26 17:45:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/26 17:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/26 17:46:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:21:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:37:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:37:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:38:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:39:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:40:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=renwu
+---
+2013/03/27 09:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 09:53:05 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/views/work/index.php:43)
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(870): WorkController->renderFile()
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(783): WorkController->renderPartial()
+#2 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/WorkController.php(41): WorkController->render()
+#3 unknown(0): WorkController->actionView()
+#4 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): WorkController->runAction()
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): WorkController->runActionWithFilters()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): WorkController->run()
+#10 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CWebApplication->run()
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37&column_id=&catalog_id=
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/views/work/index.php (43)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/WorkController.php (41)
+in /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php (13)
+2013/03/27 10:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 10:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 10:13:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:13:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:14:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:14:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:14:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:14:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:14:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:14:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:14:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:15:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:15:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('view')
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/view')
+#5 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/view?article_id=37
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=zhanpin
+---
+2013/03/27 10:25:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 10:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:07:03 [error] [exception.CException] exception 'CException' with message 'WorkController cannot find the requested view "/work/all".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/controllers/WorkController.php(25): CController->renderPartial('/work/all', Array, true)
+#1 [internal function]: WorkController->actionIndex('work', 'all')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(WorkController), Array)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(WorkController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('index')
+#8 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('work/index')
+#9 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/work/index?column_id=work&catalog_id=all
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/work/view?article_id=37&column_id=work&catalog_id=zhanpin
+---
+2013/03/27 11:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=renwu
+---
+2013/03/27 11:16:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "project.html".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('project.html')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('project.html')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/project.ht...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/project.html
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:25:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "project.html".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('project.html')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('project.html')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/project.ht...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/project.html
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "project.html".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('project.html')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('project.html')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/project.ht...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/project.html
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:27:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:27:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:27:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:28:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:29:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---
+2013/03/27 11:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "暂时没有图片".' in /Applications/MAMP/htdocs/hzb/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(271): CController->missingAction('???????????????...')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('???????????????...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('life/??????????...')
+#3 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
+---

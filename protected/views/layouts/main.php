@@ -95,12 +95,12 @@
 							</li>
 							<li class="dropdown <?php if ($this->id=='activity') {echo 'active';} ?>">
 								<a href="<?php echo $this->createUrl('/activity') ; ?>" class="dropdown-toggle" data-toggle="">科普活动<b class="caret"></b></a>
-								<ul class="dropdown-menu">
+								<!-- <ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/activity/shijian') ; ?>"> 社会实践（科普下乡）</a></li>
 									<li><a href="<?php echo $this->createUrl('/activity/zhiyuan') ; ?>">志愿服务</a></li>
 									<li><a href="<?php echo $this->createUrl('/activity/shetuan') ; ?>">社团活动</a></li>
 									<li><a href="<?php echo $this->createUrl('/activity/yaolanbei') ; ?>">历届摇篮杯作品展示</a></li>
-	                			</ul>
+	                			</ul> -->
 							</li>
 							<!-- <li><a href="blog.html">科普新闻</a></li> -->
 	              			<!-- <li><a href="<?php echo $this->createUrl('/contact') ; ?>">联系我们</a></li> -->

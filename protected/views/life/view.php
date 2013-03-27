@@ -5,7 +5,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h2><i class="ico-stats ico-white"></i>科普作品</h2>
+				<h2><i class="ico-stats ico-white"></i>科技生活画册</h2>
 
 			</div>
 			<!-- end: Container  -->
@@ -23,14 +23,14 @@
 			$curl=$this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>$catalog_id));
 			$column=Column::model()->findByPk($column_id);
 			$cotitle=$column->title;
-			$courl=$this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>'brief'));
+			$courl=$this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>'all'));
 
 			echo <<<EOD
 
 			 <li><a href="#">首页</a> <span class="divider">/</span></li>
 			 <li><a href="$courl">$cotitle</a> <span class="divider">/</span></li>
 			 <li><a href="$curl">$ctitle</a> <span class="divider">/</span></li>
-			 <li class="active">作品内容</li>
+			 <li class="active">画册内容</li>
 EOD;
 
 		?>

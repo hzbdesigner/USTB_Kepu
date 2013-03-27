@@ -20,12 +20,16 @@
 					$date=substr($model->date, 0, 10);
 					$author=$model->author;
 					$read_num=$model->read_num;
-					// $the_catalog_id=$model->catalog_id;
-					$url=$this->createUrl('view',array('column_id'=>$column_id,'catalog_id'=>$the_catalog_id));
+
+					$article_id=$model->article_id;
+					$the_column_id=$model->column_id;
+					$the_catalog_id=$model->catalog_id;
+
+					$url=$this->createUrl('view',array('article_id'=>$article_id,'column_id'=>$the_column_id,'catalog_id'=>$the_catalog_id));
 					echo <<<EOD
 				<tr>
 					<td>【<span>$author</span>】</td>
-					<td><a href="#">$title</a></td>
+					<td><a href="$url">$title</a></td>
 					<td>$date</td>
 					<td>浏览（<span>$read_num</span>）</td>
 				</tr>
