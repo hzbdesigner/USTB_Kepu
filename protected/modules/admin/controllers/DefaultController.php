@@ -3,6 +3,7 @@
 class DefaultController extends Controller
 {
 	public $layout='main';
+	public $full_column_id=" ";
 	public function filters()
 	{
 		return array(
@@ -41,7 +42,7 @@ class DefaultController extends Controller
 	public function actionIndex()
 	{
 		if( !Yii::app()->user->isGuest ) {
-			$this->redirect( array('/admin/article/admin' , 'column_id'=>'life','catalog_id'=>"all") );
+			$this->redirect( array('/admin/article/admin' , 'column_id'=>'index','catalog_id'=>"all") );
 		}else{
 			$this->render('index'); //index就是登录界面
 		}
@@ -66,7 +67,7 @@ class DefaultController extends Controller
 		// validate user input and redirect to the previous page if valid
 		if($model->validate() && $model->login()){
 			//$user = User::model()->findByPk( Yii::app()->user->id );  //user表,
-			$this->redirect( array('/admin/article/admin' , 'column_id'=>'life','catalog_id'=>"all") );
+			$this->redirect( array('/admin/article/admin' , 'column_id'=>'index','catalog_id'=>"all") );
 			
 		}else{
 			

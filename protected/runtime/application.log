@@ -6611,3 +6611,242 @@ Stack trace:
 REQUEST_URI=/hzb/USTB_Kepu/index.php/life/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E5%9B%BE%E7%89%87
 HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/life/index?column_id=life&catalog_id=all
 ---
+2013/03/27 13:43:19 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.nav_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(54): CComponent->__set('nav_column_id', NULL)
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(46): CController->render('index')
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/index/catalog_id/all
+---
+2013/03/27 13:45:10 [error] [exception.CException] exception 'CException' with message 'Property "UserController.nav_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(54): CComponent->__set('nav_column_id', NULL)
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/UserController.php(164): CController->render('index', Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/user/admi...')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/user/admin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/activity/catalog_id/all
+---
+2013/03/27 14:03:35 [error] [exception.CException] exception 'CException' with message 'Property "UserController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/UserController.php(164): CController->render('index', Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('admin')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/user/admi...')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/user/admin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/activity/catalog_id/all
+---
+2013/03/27 14:03:42 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(47): CController->render('index')
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/activity/catalog_id/all
+---
+2013/03/27 14:03:46 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(78): CController->render('index', Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/l...')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/default/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/work/catalog_id/all
+---
+2013/03/27 14:03:47 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(78): CController->render('index', Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/l...')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/default/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/life/catalog_id/all
+---
+2013/03/27 14:03:49 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(78): CController->render('index', Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/l...')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/default/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/stength/catalog_id/all
+---
+2013/03/27 14:03:49 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(78): CController->render('index', Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/l...')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/default/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/school/catalog_id/all
+---
+2013/03/27 14:03:50 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(78): CController->render('index', Array)
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('login')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/l...')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/default/login
+HTTP_REFERER=http://localhost/hzb/USTB_Kepu/index.php/admin/article/admin/column_id/index/catalog_id/all
+---
+2013/03/27 14:03:54 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController.full_column_id" is not defined.' in /Applications/MAMP/htdocs/hzb/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/views/layouts/main.php(72): CComponent->__get('full_column_id')
+#1 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/hzb/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(785): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/hzb/USTB_Kepu/protected/modules/admin/controllers/DefaultController.php(47): CController->render('index')
+#5 /Applications/MAMP/htdocs/hzb/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/hzb/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/hzb/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(292): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/hzb/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(283): CController->run('')
+#15 /Applications/MAMP/htdocs/hzb/framework/web/CWebApplication.php(142): CWebApplication->runController('admin')
+#16 /Applications/MAMP/htdocs/hzb/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/hzb/USTB_Kepu/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/hzb/USTB_Kepu/index.php/admin/
+---

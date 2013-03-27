@@ -7,7 +7,7 @@ class ArticleController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='main';
-
+	public $full_column_id=" ";
 
 	/**
 	 * @return array action filters
@@ -225,7 +225,7 @@ class ArticleController extends Controller
 
 	public function actionAdmin($column_id,$catalog_id) //navbar上点击，全是all
 	{
-		
+		$this->full_column_id=$column_id;
 		//article的显示
 		$criteria = new CDbCriteria;
 		$criteria->order='article_id DESC';	

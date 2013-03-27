@@ -51,6 +51,10 @@
 				    <a class="brand" href="<?php echo $this->createUrl('/site/index') ;?>">北科大科普网</a>
 				    <ul class="nav">
 				    	<?php
+				    		// $this->nav_column_id=$this->full_column_id;
+				    		// if($column_id){echo "true";}else{echo "false";};
+				    		//if($this->full_column_id){echo "true";}else{echo "false";};
+				    		//echo $this->full_column_id;
 				    		$param = array(
 								'order'=>'order_id asc',  
 							);
@@ -65,7 +69,7 @@
 				    			$title=$column->title;
 				    			$url=$this->createUrl('/admin/article/admin' , array('column_id'=>$columnId,'catalog_id'=>"all"));
 				    			//$url=$this->createUrl('/admin/article/admin');
-				    			if($column_id==$columnId){$active="active";}else{$active=" ";}				    			
+				    			if($this->full_column_id==$columnId){$active="active";}else{$active=" ";}				    			
 				    			echo <<<EOD
 				    			<li class="$active"><a href="$url">$title</a></li>
 EOD;
