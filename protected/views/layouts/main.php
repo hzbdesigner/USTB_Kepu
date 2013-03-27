@@ -146,19 +146,26 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="index.html">首页</a></li>
-
-							<li><a href="about.html">北京科技大学</a></li>
-
-							<li><a href="services.html">优势学科</a></li>
-
-							<li><a href="pricing.html">科技创造七彩生活</a></li>
-							
-							<li><a href="contact.html">科普作品</a></li>
-
-							<li><a href="contact.html">科普活动</a></li>
-
-							<li><a href="contact.html">联系</a></li>
+							<li class="">
+	                			<a href="<?php echo $this->createUrl('/site/index') ; ?>" >首页</a>
+	              			</li>
+							<li class="">
+	              				<a href="<?php echo $this->createUrl('/school/index') ; ?>" >北京科技大学</a>
+	              			</li>
+							<li class="">
+	                			<a href="<?php echo $this->createUrl('/strength/index',array('column_id'=>'strength') ) ; ?>" >优势学科</a>
+	              			</li>
+							<li class="">
+	                			<a href="<?php echo $this->createUrl('/life/index', array('column_id'=>'life','catalog_id'=>'all')); ?>" >科技生活</a>
+	                			
+	              			</li>									
+							<li class=""><a href="<?php echo $this->createUrl('/work/index', array('column_id'=>'work','catalog_id'=>'brief')) ; ?>" >科普作品</a>
+								
+							</li>
+							<li class="">
+								<a href="<?php echo $this->createUrl('/activity/index', array('column_id'=>'activity','catalog_id'=>'shijian')) ; ?>" >科普活动</a>
+								
+							</li>
 
 						</ul>
 

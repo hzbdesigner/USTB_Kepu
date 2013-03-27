@@ -237,7 +237,7 @@ class ArticleController extends Controller
 		
 		//tabbar上的catalog的显示，只需确定是那个栏目的catalog就成——因此值与栏目有关。
 		$criteria_ca = new CDbCriteria;
-		$criteria_ca->order='catalog_id DESC';	
+		$criteria_ca->order='order_id ASC';	
 		$criteria_ca->addCondition("column_id='$column_id'");
 		$catalogs = Catalog::model()->findAll($criteria_ca);
 
