@@ -28,6 +28,8 @@ class LifeController extends Controller
 	{	
 		//article		
 		$model=Article::model()->findByPk($article_id);
+		$model->read_num += 1;
+		$model->save();
 		$this->render('view',array('model'=>$model,'column_id'=>$column_id,'catalog_id'=>$catalog_id));
 
 	}
