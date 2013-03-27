@@ -21,9 +21,18 @@ class ActivityController extends Controller
 		$criteria_ca->order='order_id ASC';
 		$criteria_ca->addCondition("column_id='$column_id'");
 		$catalogs=Catalog::model()->findAll($criteria_ca);
+
+		//pages
+		$criteriaPage = $criteria;
+		$count = Article::model()->count( $criteriaPage);
+		$pages = new CPagination( $count );
+		$pages->pageSize =15;
+		$pages->applyLimit( $criteriaPage );
+		$page_num = ceil( $count/$pages->pageSize );
+
 		//$this->render('index',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
 		//此处要修改
-		$sub_content = $this->renderPartial($catalog_id ,array('models'=>$models),true);
+		$sub_content = $this->renderPartial($catalog_id ,array('models'=>$models,'pages'=>$pages),true);
 
 	    $this->render('index',array('sub_content' =>$sub_content,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
 	}

@@ -40,7 +40,7 @@ EOD;
 			
 		</tbody>
 	</table>
-	<div class="pagination ">
+	<!-- <div class="pagination ">
 		<ul>
 			<li><a href="#">&laquo;</a></li>
 			<li class="active"><a href="#">1</a></li>
@@ -50,7 +50,17 @@ EOD;
 			<li><a href="#">5</a></li>
 			<li><a href="#">&raquo;</a></li>
 		</ul>
-	</div>
+	</div> -->
+	<?php  $this->widget('CLinkPager',array(
+			'pages'=>$pages,
+			'firstPageLabel' => '首页',
+			'lastPageLabel' => '末页',
+			'nextPageLabel' => '下一页',
+			'prevPageLabel' => '上一页',
+			'header' => '',
+			'footer' => '',
+			)); 
+	?>
 	
 </div>	
 
