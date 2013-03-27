@@ -2,10 +2,40 @@
 
 class OrderController extends Controller
 {
+	public $layout='main';
 	public function actionIndex()
 	{
 		$this->render('index');
 	}
+
+
+	// public function actionIndex($column_id)
+	// {	
+	// 	//article
+	// 	$criteria = new CDbCriteria;
+	// 	$criteria->order='article_id DESC';
+	// 	$criteria->addCondition("column_id='$column_id'");
+	// 	if($catalog_id !=="all"){
+	// 		$criteria->addCondition("catalog_id='$catalog_id'");
+	// 	}
+	// 	$models=Article::model()->findAll($criteria);
+
+	// 	//column&catalog
+	// 	$column=Column::model()->findByPk($column_id);
+	// 	$criteria_ca = new CDbCriteria;
+	// 	$criteria_ca->order='order_id ASC';
+	// 	$criteria_ca->addCondition("column_id='$column_id'");
+	// 	$catalogs=Catalog::model()->findAll($criteria_ca);
+	// 	$this->render('index',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
+	// }
+
+	// public function actionView($article_id,$column_id,$catalog_id)
+	// {	
+	// 	//article		
+	// 	$model=Article::model()->findByPk($article_id);
+	// 	$this->render('view',array('model'=>$model,'column_id'=>$column_id,'catalog_id'=>$catalog_id));
+
+	// }
 
 	// -----------------------------------------------------------
 	// Uncomment the following methods and override them if needed

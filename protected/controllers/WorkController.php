@@ -22,7 +22,7 @@ class WorkController extends Controller
 		$criteria_ca->addCondition("column_id='$column_id'");
 		$catalogs=Catalog::model()->findAll($criteria_ca);
 		//$this->render('index',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
-		$sub_content = $this->renderPartial('/work/'.$catalog_id ,array('models'=>$models),true);
+		$sub_content = $this->renderPartial($catalog_id ,array('models'=>$models),true);
 	    $this->render('index',array('sub_content' =>$sub_content,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
 	}
 

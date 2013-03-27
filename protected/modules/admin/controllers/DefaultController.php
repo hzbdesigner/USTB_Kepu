@@ -16,6 +16,11 @@ class DefaultController extends Controller
 				'actions'=>array( 'index', 'login'),
 				'users'=>array('*'),
 			),
+				array('allow',
+				'actions'=>array( 'order'),
+				'users'=>array('*'),
+			),
+
 			array('allow',
 				'actions'=>array('logout'),
 				'users'=>array('@'),
@@ -89,6 +94,30 @@ class DefaultController extends Controller
 		$this->render('error',array(
 			'msg'=>$msg,
 		));
+	}
+	//order
+	public function actionOrder()
+	{
+	
+		//$_POST['LoginForm']['password'] = md5( $_POST['LoginForm']['password'] );//password加密重新赋值
+		$model=new LoginForm;
+		$model->attributes = $_POST['LoginForm'];
+
+		// validate user input and redirect to the previous page if valid
+		if($model->validate() && $model->login()){
+			//$user = User::model()->findByPk( Yii::app()->user->id );  //user表,
+			$this->redirect( array('/order/index') );// , 'column_id'=>'order'
+			
+		}else{
+			
+			//print_r( $model->errors );
+			$error = '邮箱 或 密码错误！';
+			$this->render('index',array(
+				'error'=>$error,
+			));
+		
+		}
+
 	}
 	
 }

@@ -94,7 +94,7 @@
 	                			</ul> -->
 							</li>
 							<li class="dropdown <?php if ($this->id=='activity') {echo 'active';} ?>">
-								<a href="<?php echo $this->createUrl('/activity') ; ?>" class="dropdown-toggle" data-toggle="">科普活动<b class="caret"></b></a>
+								<a href="<?php echo $this->createUrl('/activity/index', array('column_id'=>'activity','catalog_id'=>'shijian')) ; ?>" class="dropdown-toggle" data-toggle="">科普活动<b class="caret"></b></a>
 								<!-- <ul class="dropdown-menu">
 	                  				<li><a href="<?php echo $this->createUrl('/activity/shijian') ; ?>"> 社会实践（科普下乡）</a></li>
 									<li><a href="<?php echo $this->createUrl('/activity/zhiyuan') ; ?>">志愿服务</a></li>

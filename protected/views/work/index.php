@@ -56,20 +56,20 @@ EOD;
 									<!-- start: Contact Form -->
 							<div id="contact-form">
 
-								<form method="post" action="">
+								<form method="post" action="<?php echo $this->createUrl('/admin/default/order') ; ?>" method="POST">
 
 									<fieldset>
 										<div class="clearfix">
 											<label for="name"><span>用户名:</span></label>
 											<div class="input">
-												<input tabindex="1" size="20" id="name" name="name" type="text" value="">
+												<input tabindex="1" size="20" id="name" name="LoginForm[email]" type="text" >
 											</div>
 										</div>
 
 										<div class="clearfix">
 											<label for="email"><span>密码:</span></label>
 											<div class="input">
-												<input tabindex="2" size="20" id="email" name="email" type="text" value="" >
+												<input tabindex="2" size="20" id="email" name="LoginForm[password]" type="password" v >
 											</div>
 										</div>
 
