@@ -51,8 +51,8 @@
 	
         		<div class="span4">
           			<div class="icons-box">
-						<i class="ico-iphone ico-color circle-color big"></i>
-						<div class="title"><h3>材料科学</h3></div>
+						<span class="logo" style="display:inline;"><img style="width:80px;height:80px;" src="<?php echo Yii::app()->baseUrl; ?>/img/logo_100.png" />
+						<div class="title"><a href="#"><h3>材料科学</h3></a></div>
 						<p>
 							材料科学，这个学科是我们学校的优势学科，很NB~大家都很喜欢学，而且学得很好。冶金工程优势学科，这个学科是我们学校的优势学科，很NB~大家都很喜欢学，而且学得很好。
 						</p>

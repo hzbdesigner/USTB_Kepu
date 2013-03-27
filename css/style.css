@@ -139,12 +139,15 @@ header.container{background:transparent;}
 	text-shadow: none !important;
 	margin-top: 10px;
 }
-
+.brand:hover{color:#444!important;}
 .brand  i {
 	margin-top: -10px;
 	margin-right: 10px;
 }
-
+.logo{display: inline-block;width:50px;height:50px;	margin-top: -10px;margin-right: 10px;}
+.logo img{height:50px;width:50px;}
+.logo.mini{display: inline-block;width:42px;height:42px;	margin-top:0px;margin-right: 0px;}
+.logo.mini img{height:42px;width:42px;margin-top: -5px !important;}
 .brand span {
 	color: #a21317;
 }

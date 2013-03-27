@@ -59,7 +59,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="<?php echo $this->createUrl('/site/index') ; ?>"><i class="ico-charts circle"></i>北京科技大学<span>科普网</span></a>
+					<a class="brand" href="<?php echo $this->createUrl('/site/index') ; ?>"><span class="logo"><img src="<?php echo Yii::app()->baseUrl; ?>/img/logo_100.png" /></span>北京科技大学<span>科普网</span></a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class=" dropdown <?php if ($this->id=='site') {echo 'active';} ?>">
@@ -134,7 +134,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="#">科普网</a>
+						<span class="logo mini"><img src="<?php echo Yii::app()->baseUrl; ?>/img/logo_100.png" /></span><a class="brand" href="#">科普网</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
