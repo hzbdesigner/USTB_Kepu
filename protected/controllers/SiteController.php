@@ -28,9 +28,18 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		//news
+		$criteria_news = new CDbCriteria;
+		$criteria_news->addCondition("column_id='news'");
+		$newss=Article::model()->findAll($criteria_news);
+		//banner
+		$this->render('index',array('newss'=>$newss));
+	}
+		public function actionView($article_id)
+	{
+
+		$news=Article::model()->findByPk($article_id);
+		$this->render('view',array('news'=>$news));
 	}
 
 	/**

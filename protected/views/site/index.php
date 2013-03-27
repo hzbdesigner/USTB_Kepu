@@ -27,19 +27,17 @@ $this->pageTitle=Yii::app()->name;
 			<a href="#" class="da-link">Read more</a>
 			<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/ustb_logo.png" alt="image03" /></div>
 		</div>
-		<div class="da-slide">
-			<h2>最新的一个科技新闻和领导会议</h2>
-			<p>社会实践（介绍+链接+作品展示）：科普下乡
-    志愿服务（介绍+链接+作品展示）：科普下乡
-    社团活动：天文学会某讲座
-    历届摇篮杯作品展示（作品简介）</p>
-			<a href="#" class="da-link">Read more</a>
-			<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/ustb_logo_red.png" alt="image04" /></div>
-		</div>
-		<nav class="da-arrows">
-			<span class="da-arrows-prev"></span>
-			<span class="da-arrows-next"></span>
-		</nav>
+
+				<div class="da-slide">
+					<h2>最新的一个科技新闻和领导会议</h2>
+					<p>社会实践（介绍+链接+作品展示）：科普下乡
+		    志愿服务（介绍+链接+作品展示）：科普下乡
+		    社团活动：天文学会某讲座
+		    历届摇篮杯作品展示（作品简介）</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="<?php echo Yii::app()->baseUrl; ?>/img/parallax-slider/ustb_logo_red.png" alt="image04" /></div>
+				</div>
+
 	</div>
 	
 </div>
@@ -153,10 +151,8 @@ $this->pageTitle=Yii::app()->name;
 						<div class="span3">
 	
 							<div class="picture">
-								<a href="" rel="image" title="mobile app">
-									<img src="<?php echo Yii::app()->baseUrl; ?>/img/car.jpg" >
-									<div class="image-overlay-zoom"></div>
-								</a>
+									<img style="height:180px;width:270px;" src="<?php echo Yii::app()->baseUrl; ?>/img/car.jpg" >
+
 							</div>
 							<div class="item-description">
 								<h4><a href="#">北京科技大学某某实验室新的科技发明</a></h4>
@@ -168,10 +164,9 @@ $this->pageTitle=Yii::app()->name;
 						<div class="span3">
 
 							<div class="picture">
-								<a href="#">
-									<img src="<?php echo Yii::app()->baseUrl; ?>/img/web_app1.jpg">
-									<div class="image-overlay-zoom"></div>
-								</a>
+
+									<img style="height:180px;width:270px;" src="<?php echo Yii::app()->baseUrl; ?>/img/web_app1.jpg">
+									
 							</div>
 							<div class="item-description">
 								<h4><a href="#">北京科技大学某某实验室新的科技发明</a></h4>
@@ -179,21 +174,26 @@ $this->pageTitle=Yii::app()->name;
 							</div>
 
 		        		</div>
-
-						<div class="span3">
-
-							<div class="picture">
-								<a href="#" rel="image" title="mobile app">
-									<img src="<?php echo Yii::app()->baseUrl; ?>/img/mobile_app1.jpg">
-									<div class="image-overlay-zoom"></div>
-								</a>
+		        		<?php
+						foreach ($newss as $news) {
+							$title=$news->title;
+							$des=$news->des;
+							$despic=$news->despic;
+							$article_id=$news->article_id;
+							$url=$this->createUrl('view',array('article_id'=>$article_id));
+							echo <<<EOD
+							<div class="span3">
+								<div class="picture">
+										<img style="height:180px;width:270px;" src="$despic">
+								</div>
+								<div class="item-description">
+									<h4><a href="$url">$title</a></h4>
+									<p>$des</p>
+								</div>
 							</div>
-							<div class="item-description">
-								<h4><a href="#">北京科技大学某某实验室新的科技发明</a></h4>
-								<p>张三教授，做了很努力地工作，经过很长时间的工作，再某专业领域取得巨大的成绩，做了很努力地工作，经过很长时间的工作，再某专业领域取得巨大的成绩，大的成绩，</p>
-							</div>
-
-						</div>
+EOD;
+						}
+						?>
 					
         			</div>
 					<!-- end: Row -->

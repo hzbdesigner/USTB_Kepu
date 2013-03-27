@@ -59,10 +59,26 @@
 						<div class="clear"></div>
 					</div>
         		</div>
-
-
-
       		</div>
+      		<?php 
+      			foreach ($models as $model) {	
+      				$title=$model->title;
+      				$des=$model->des;
+      				$img=$model->despic;
+      				echo <<<EOD
+		      		<div class="row">
+		        		<div class="span4">
+		          			<div class="icons-box">
+								<span class="logo" style="display:inline;"><img style="width:80px;height:80px;" src="$img" />
+								<div class="title"><a href=""><h3>$title</h3></a></div>
+								<p>	$des</p>
+								<div class="clear"></div>
+							</div>
+		        		</div>
+		      		</div>
+EOD;
+      			}
+      		?>
 			<!-- end: Row -->
       	
 		</div>

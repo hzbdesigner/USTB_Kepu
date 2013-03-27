@@ -50,7 +50,7 @@ EOD;
 			?>
 		</div>
 		<div class="content">
-		
+			<?php echo $model->content; ?>
 		</div>
 		
 	</div>
