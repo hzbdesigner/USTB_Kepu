@@ -1,2 +1,3 @@
 protected/runtime/
 protected/congfig/main.php
+protected/runtime/application.log
