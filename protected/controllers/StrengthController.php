@@ -10,7 +10,7 @@ class StrengthController extends Controller
 		$criteria->addCondition("column_id='$column_id'");
 		$models=Article::model()->findAll($criteria);
 
-		$catalogs=$column->catalogs;
+		//$catalogs=$column->catalogs;
 		$this->render('index',array('models'=>$models));
 	}
 
