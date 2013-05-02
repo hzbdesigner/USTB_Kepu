@@ -1,6 +1,6 @@
 
 <div id="about">
-	<div class="title"><h3>作品——社会实践</h3></div>
+	<div class="title"><h3>活动——社会实践</h3></div>
 
 	<table class="table table-striped lists">
 		<thead>

@@ -70,7 +70,7 @@ EOD;
 							<h5><a href="$url">$title</a></h5>
 							<p>$des</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i>$date</span> <span><i class="mini-ico-user"></i> <a href="#">$author</a></span> <span><i class="mini-ico-comment"></i><a href="#">$read_num</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i>$date</span> <span><i class="mini-ico-user"></i> <a href="#">$author</a></span> <span><i class="mini-ico-eye-open"></i><a href="#">$read_num</a></span></div>
 					</div>	
 				</div>
 EOD;

@@ -75,7 +75,7 @@ EOD;
 			<div class="control-group">
 				<label class="control-label">简述</label>
 				<div class="controls">
-					<textarea rows="3" class="span5" name='Article[des]' value="$des"></textarea>
+					<textarea rows="3" class="span5" name='Article[des]' >$des</textarea>
 				</div>
 			</div>
 EOD;
