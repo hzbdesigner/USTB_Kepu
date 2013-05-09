@@ -6,6 +6,17 @@ class LifeController extends Controller
 
 	public function actionIndex($column_id,$catalog_id)
 	{	
+		$this->render('index');
+	}
+
+	public function actionView($column_id,$catalog_id)
+	{	
+		//article		
+		// $model=Article::model()->findByPk($article_id);
+		// $model->read_num += 1;
+		// $model->save();
+		// $this->render('view',array('model'=>$model,'column_id'=>$column_id,'catalog_id'=>$catalog_id));
+
 		//article
 		$criteria = new CDbCriteria;
 		$criteria->order='article_id DESC';
@@ -21,16 +32,7 @@ class LifeController extends Controller
 		$criteria_ca->order='order_id ASC';
 		$criteria_ca->addCondition("column_id='$column_id'");
 		$catalogs=Catalog::model()->findAll($criteria_ca);
-		$this->render('index',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
-	}
-
-	public function actionView($article_id,$column_id,$catalog_id)
-	{	
-		//article		
-		$model=Article::model()->findByPk($article_id);
-		$model->read_num += 1;
-		$model->save();
-		$this->render('view',array('model'=>$model,'column_id'=>$column_id,'catalog_id'=>$catalog_id));
+		$this->render('view',array('models'=>$models,'catalogs'=>$catalogs,'catalog_id'=>$catalog_id,'column_id'=>$column_id));
 
 	}
 	

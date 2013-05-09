@@ -16,42 +16,69 @@
 
 <div class="span9 news-detail">
 	<div id="about">
-		<ul class="breadcrumb">
-		<?php 
-			$catalog=Catalog::model()->findByPk($catalog_id);
-			$ctitle=$catalog->title;
-			$curl=$this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>$catalog_id));
-			$column=Column::model()->findByPk($column_id);
-			$cotitle=$column->title;
-			$courl=$this->createUrl('index',array('column_id'=>$column_id,'catalog_id'=>'all'));
+	<?php
+		$catalog=Catalog::model()->findByPk($catalog_id);
+		$ca_title=$catalog->title;
+	?>
+	<div class="title" style="text-align:center;"><h3 style="margin:0 auto;padding: 0px 25px;"><?php echo $ca_title; ?></h3></div>
+				
+		<!-- start: Flexslider -->
+		<div class="slider school">
+		
+			<div id="flex1" class="flexslider">
+				<ul class="slides">
 
-			echo <<<EOD
+					<?php 
+						foreach ($models as $model) {
+							$title=$model->title;
+							$despic=$model->despic;
+							$des=$model->des;
+							echo <<<EOD
+							<li>
+								<img src="$despic" alt="" />
+								<div class="slide-caption n hidden-phone">
+									<h3>$title</h3>
+									<p>	$des</p>
+								</div>
+							</li>
 
-			 <li><a href="#">首页</a> <span class="divider">/</span></li>
-			 <li><a href="$courl">$cotitle</a> <span class="divider">/</span></li>
-			 <li><a href="$curl">$ctitle</a> <span class="divider">/</span></li>
-			 <li class="active">画册内容</li>
 EOD;
+						}
+					?>	
+					<li>
+						<img src="<?php echo Yii::app()->baseUrl; ?>/img/slider/slider1.jpg" alt="" />
+						<div class="slide-caption n hidden-phone">
+							<h3>图片标题，校园风光好美丽啊~</h3>
+							<p>
+								图片描述：事件地点，历史啊，文化啊~描述图片和内容更图片描述：事件地点，历史啊，文化啊~描述图片和内容更图片描述：事件地点，历史啊，文化啊~描述图片和内容更
+							</p>
+						</div>
+					</li>
 
-		?>
-		</ul>
-		<div class="title" style="text-align:center;"><h3 style="margin:0 auto;padding: 0px 25px;">作品标题标题标题</h3></div>
+					<li>
+						<img src="<?php echo Yii::app()->baseUrl; ?>/img/slider/slider2.jpg" alt="" />
+						<div class="slide-caption hidden-phone">
+							<h3>图片标题，校园风光好美丽啊~</h3>
+							<p>
+								图片描述：事件地点，历史啊，文化啊~描述图片和内容更图片描述：事件地点，历史啊，文化啊~描述图片和内容更图片描述：事件地点，历史啊，文化啊~描述图片和内容更
+							</p>
+						</div>
+					</li>
 
-		<div class="sub-title">
-			<?php 
-				$author=$model->author;
-				$date=substr($model->date, 0, 10);
-				$read_num=$model->read_num;
-				echo <<<EOD
-				<span><i class="mini-ico-user"></i>$author</span>
-				<span><i class="mini-ico-time"></i>$date</span>
-				<span><i class="mini-ico-eye-open"></i>$read_num</span>
-EOD;
-			?>
+					<li>
+						<img src="<?php echo Yii::app()->baseUrl; ?>/img/slider/slider3.jpg" alt="" />
+					</li>
+
+				</ul>
+			</div>
+		
 		</div>
-		<div class="content">
-			<?php echo $model->content; ?>
-		</div>
+		<!-- end: Flexslider -->
+
+
 		
 	</div>
 </div>	
+
+
+			

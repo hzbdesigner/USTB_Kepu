@@ -398,8 +398,8 @@ header.container{background:transparent;}
 
 /* Flexslider
 =================================================================== */
-.slider.school{height: 240px;}
-.slider.school .flexslider img{height: 240px;}
+.slider.school{height: 400px;}
+.slider.school .flexslider img{height: 400px;}
 /* Browser Resets
 =================================================================== */
 .flex-container a:active,

@@ -69,7 +69,7 @@
 	              				<a href="<?php echo $this->createUrl('/school/index') ; ?>" class="dropdown-toggle" data-toggle="">北京科技大学</a>
 	              			</li>
 							<li class="dropdown <?php if ($this->id=='strength') {echo 'active';} ?>">
-	                			<a href="<?php echo $this->createUrl('/strength/index',array('column_id'=>'strength') ) ; ?>" class="dropdown-toggle" data-toggle="">优势学科</a>
+	                			<a href="<?php echo $this->createUrl('/strength/index',array('column_id'=>'strength','catalog_id'=>'strength') ) ; ?>" class="dropdown-toggle" data-toggle="">优势学科</a>
 	              			</li>
 							<li class="dropdown <?php if ($this->id=='life') {echo 'active';} ?>">
 	                			<a href="<?php echo $this->createUrl('/life/index', array('column_id'=>'life','catalog_id'=>'all')); ?>" class="dropdown-toggle" data-toggle="">科技生活<b class="caret"></b></a>
