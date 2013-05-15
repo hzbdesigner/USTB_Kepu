@@ -102,6 +102,10 @@ class ArticleController extends Controller
 				$des=$_POST['Article']['des'];
 				$model->des=$des;
 			}
+			if ($_POST['Article']['despic']) {
+				$despic=$_POST['Article']['despic'];
+				$model->despic=$despic;
+			}
 
 			if($model->save()){
 				$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
