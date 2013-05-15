@@ -109,6 +109,9 @@ class ArticleController extends Controller
 			if(!$model->despic){
 				$model->despic="default_url";
 			}
+			if(!$model->des){
+				$model->des="default_des";
+			}
 
 			if($model->save()){
 				$this->redirect(array('/admin/article/admin','column_id'=>$column_id,'catalog_id'=>"all"));
