@@ -98,7 +98,7 @@ class ArticleController extends Controller
 				$content=$_POST['Article']['content'];
 				$model->content=$content;
 			}
-			if ($des=$_POST['Article']['des']) {
+			if ($_POST['Article']['des']) {
 				$des=$_POST['Article']['des'];
 				$model->des=$des;
 			}
